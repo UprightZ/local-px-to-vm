@@ -1,0 +1,68 @@
+.team-list__item {
+  margin-top: 2.667vw;
+  padding: 4vw 4vw 5.333vw;
+  background: #FFF;
+}
+.team-list__item .team-item__info {
+  position: relative;
+  display: flex;
+}
+.team-list__item .team-item__info--tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  letter-spacing: 0;
+  color: #34c083;
+  background-color: #fff;
+  border-radius: 0.533vw;
+  border: solid 1px #34c083;
+  padding: 0.4vw 1.067vw;
+}
+.team-list__item .team-item__info--logo {
+  width: 12vw;
+  height: 12vw;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 4vw;
+}
+.team-list__item .team-item__info--logo img {
+  width: 100%;
+  height: 100%;
+}
+.team-list__item .team-item__info--title .name {
+  font-family: PingFangSC-Medium;
+  font-size: 4.533vw;
+  letter-spacing: 0;
+  color: #444;
+  padding-top: 0.667vw;
+  padding-bottom: 2.667vw;
+}
+.team-list__item .team-item__info--title .des {
+  font-family: PingFangSC-Light;
+  font-size: 3.733vw;
+  letter-spacing: 0;
+  color: #8e8e93;
+}
+.team-list__item .team-item__info--title .des span {
+  margin-right: 0.267vw;
+  display: inline-block;
+}
+.team-list__item .team-item__info--title .des span:last-child {
+  margin-right: 0;
+}
+.team-list__item .team-item__works {
+  display: flex;
+  margin-top: 4.667vw;
+  margin-bottom: 1.067vw;
+}
+.team-list__item .team-item__works img {
+  width: 29.733vw;
+  height: 20vw;
+  margin-right: 1.333vw;
+}
+.team-list__item .team-item__works img:last-child {
+  margin-right: 0;
+}

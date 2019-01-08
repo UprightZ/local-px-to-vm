@@ -1,0 +1,21 @@
+{
+  "name": "local-px-to-vm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-px-to-viewport": "0.0.3",
+    "postcss-uncss": "^0.16.1",
+    "uncss": "^0.16.2"
+  }
+}
