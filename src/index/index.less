@@ -1,0 +1,1121 @@
+/* cell组件样式 */
+.cell {
+    position:relative;
+    /* padding:12px 15px; */
+    background:#fff;
+    display:flex;
+    align-items:center;
+    font-family:PingFangSC-Regular;
+
+    &__bd {
+        font-size: 36px;
+        line-height: 50px;
+        color: #444444;
+        flex: 1;
+    }
+
+    &__navigate {
+        font-size: 26px;
+        line-height: 24px;
+        color: #8E8E93;
+        letter-spacing: 0;
+
+        img {
+            .next-img;
+            margin-left:12px;
+            vertical-align: inherit;
+        }
+    }
+}
+
+/* divider组件样式 */
+.divider {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: PingFangSC-Regular;
+    color: #8E8E93;
+    
+    &__content{
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    &__line{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #8E8E93;
+        transform: translateX(-50%);
+    }
+
+}
+
+/* case装修案例组件样式 */
+.case {
+    &__list {
+
+        &--item {
+            width: 329px;
+            font-family: PingFangSC-Regular;
+
+            div {
+                width: 100%;
+                height: 204px;
+                overflow: hidden;
+                border-radius: 6px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                    &.threedD {
+                        width: 110px;
+                        height: 54px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            .title {
+                font-size: 30px;
+                line-height: 42px;
+                color: #444;
+                letter-spacing: 0;
+                margin: 14px 0 6px;
+                white-space: nowrap
+            }
+
+            .des {
+                font-size: 22px;
+                line-height: 32px;
+                color: #8E8E93;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+
+/* team组件样式 */
+.team {
+    &__list {
+
+        &--item {
+            width: 130px;
+            font-family: PingFangSC-Regular;
+
+            div {
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 130px;
+                    border-radius: 50%;
+                }
+            }
+
+            .title {
+                font-family: PingFangSC-Medium;
+                font-size: 26px;
+                color: #444;
+                text-align: center;
+                line-height: 26px;
+                margin: 20px 0 10px;
+                white-space: nowrap
+            }
+
+            .des {
+                font-family: PingFangSC-Regular;
+                font-size: 24px;
+                color: #8E8E93;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/* technology工艺列表样式 */
+.technology {
+    &__item {
+        
+        a {
+            display: flex;
+        }
+
+        &--img {
+            width: 240px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 6px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &--right {
+            width: 423px;
+            margin-left: 28px;
+            padding: 12px 0;
+
+            .title {
+                font-family: PingFangSC-Medium;
+                font-size: 30px;
+                color: #444;
+                letter-spacing: 0;
+                line-height: 42px;
+                margin-bottom: 14px;
+            }
+
+            .des {
+                font-family: PingFangSC-Regular;
+                font-size: 26px;
+                color: #666;
+                letter-spacing: 0;
+                line-height: 40px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+        }
+    }
+}
+
+/* 业主评论样式 */
+.evaluation {
+    &__item {
+        border-bottom: 1px solid #EEE;
+        padding-bottom: 20px;
+
+        a {
+            display: flex;
+        }
+
+        &--img {
+            width: 66px;
+            height: 66px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &--right {
+            flex: 1;
+            margin-left: 18px;
+
+            .title {
+                font-family: PingFangSC-Regular;
+                margin-bottom: 6px;
+                .flex-space-between-center;
+
+                &--name {
+                    font-size: 26px;
+                    color: #666;
+                    line-height: 36px;
+                }
+
+                &--date {
+                    font-size: 22px;
+                    line-height: 32px;
+                    color: #A0A0A0;
+                }
+            }
+
+            .result {
+                display: flex;
+                margin-bottom: 14px;
+
+                .score {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 1;
+
+                    &--level {
+                        margin-right: 28px;
+                        margin-bottom: 10px;
+                        display: flex;
+
+                        &:nth-last-of-type(1) {
+                            margin-bottom: 0;
+                        }
+
+                        label {
+                            font-size: 22px;
+                            color: #666;
+                            line-height: 32px;
+                        }
+
+                        p {
+                            margin-left: 10px;
+                            .flex-row-center;
+
+                            .icon {
+                                width: 20px;
+                                height: 18px;
+                                margin-right: 4px;
+
+                                &:nth-last-of-type(1) {
+                                    margin-right: 0;
+                                }
+                            }
+
+                            .icon-star1 {
+                                background-image: url(../image/Select.png);
+                                // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAB5ElEQVRYhd3WvWoUYRTG8d8uRoiIUYjpohGEXIBaa2kTOxuDhYiKoIhFwKxbJAE/LiGN4CVoqrQ2aUwuIGBhmWZxIyGdrMWeieNkZ2azHyP4wDDzvufMef4z7553ttbZMIxq+ICH6AxUYaGjPhQCd/EgzgNrGIhTWIvrtRhXDnEf83E9H+NKIU5jNTO3GvOVQTzFbGZuNuYrgTiLRk6sEfGxQ7zATE5sJuJjhTiPpZKcpcgbG8QrTJXkTEVe3yrr7Rqu4gau40mfdZ/rdso2vuKbgh01DZEYXssc5/o0TusMXqbGP7GTOY7Aap0NTdzUfdITreWQ+hEwX+q6r+xWxQBwQffht+vYxKOKARI9ttDZTLrjI5oVAzTD968WfYP1igDWw08WAp7h85gBPoXPkbIQv3APW2MC2MJi+ORCwCHuYHfEALtR9zAbyNu2W7iNvREB7EW9Vq9g0bfju+N/XAbVStTrqbIP2PSIIC4WBcsgLo0IorBOGcTl/wlibhiIf74c05gcEcSkgh95EUTZUuzrtvCVOO+X5OfWK4LIe4WJ+Zw//b8S4yKY3CU5yZto4XXKvJ2Jt1MwDcd3x4EgkptaWI7ib3uYZ9XGu8hfTsEMtBwTKfP3OCgxz+og7ktgJvISfwP/1VZ1N/V/RQAAAABJRU5ErkJggg==)
+                            }
+
+                            .icon-star2 {
+                                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAB8ElEQVRYhd3WPWsUURTG8d8GI0TEKMRUE40gpA5qraWVnY1iIaIiKGIRMDFFEvDlI6QR/AiaKq1NGuMHCFgISZFmMZGQTtZiz8ZxsjOTzO6O4APDzL3nzHn+M3fPnW20VvSixtb05ns8QKtKgSRJDPWEwG3cj3Nl9QJxAktxvRTj2iHuYSqup2JcK8RJLGbmFmO+NognmMjMTcR8LRCnMZcTm4v4wCGeYzwnNh7xgUKcxUxJzkzkDQziJUZLckYj78gq6+0GLuMaruLxEes+0+6UdXzBNwU7ahqiY3glc5w5onFap/AiNf6Jr5njAKzRWjGP69pPeqy1hK3pzQqM4EfAfB7SfmU3qgD0qHPaD78+hFU8rBmgo0dJkqx2uuMD5msGmA/fv1r0NZZrAlgOP1kIeIpPAwb4GD4HykL8wh2sDQhgDXfDJxcC9nELG30G2Ii6+9lA3rbdxE1s9wlgO+o1uwWLvh3fHf7jUlULUa+ryj5gY32COF8ULIO40CeIwjplEBf/J4jJXiD++XKMYaRPECMKfuRFEGVLsavdwpfivFuSn1uvCCLvFXbMJ/3p/4UYF8HkLslx3kQTr1LmO5n4TgpmzuHdsRJE56YmZqP4my7mWe3gbeTPpmAqLcdwyvwd9krMs9qL+zoww3mJvwELR1h1AlRg1QAAAABJRU5ErkJggg==)
+                            }
+
+                            .icon-star3 {
+                                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAB50lEQVRYhd3WvWoUYRTG8d8uRoiIUYipJhpByAWotZZWdjaKhYiKoIhFwKxbJAE/LiGN4CVolzZNGuMFBCyEbdIsbiSkEy32bBwnOzOb/RjBB4aZ9z1nzvOfefe8s7VWq2UE1fAeD/BrmAJJkqiPQoDbuB/noTUKxAmsxfVajCuHuIfFuF6McaUQJ7GamVuN+cognmA+Mzcf85VAnEYjJ9aI+MQhnmMuJzYX8YlCnMVSSc5S5E0M4iVmSnJmIm9glfV2DZdxDVfxeMC6z3Q7ZRuf8VXBjpqG6BleyRxnBjRO6xRepMY/8CVzHILVWq1WE9d1n/RYazmivgfMZl33ld2oGADO6T78dh0beFgxQE+PkiTZ6HXHBzQrBmiG718t+hrrFQGsh58sBDzFpwkDfAyfQ2UhfuIOtiYEsIW74ZMLAQe4hZ0xA+xE3YNsIG/bbuMmdscEsBv12v2CRd+Ob47+cRlWK1Gvr8o+YLNjgjhfFCyDuDAmiMI6ZRAX/yeIhVEg/vlyzGJ6TBDTCn7kRRBlS7Gn28KX4rxXkp9brwgi7xX2zBf86f+VGBfB5C7Jcd5EG69S5p1MvJOCaTi6Ow4F0bupjeUo/qaPeVYdvI385RTMUMsxlTJ/h/0S86z2474ezFRe4m/5o1Z1F0CfmAAAAABJRU5ErkJggg==)
+                            }
+                        }
+                    }
+                }
+
+                .stage {
+                    border: 1px solid #D8D8D8;
+                    border-radius: 4px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 20px;
+                    color: #A0A0A0;
+                    text-align: center;
+                    height: 28px;
+                    padding: 0 6px;
+                    line-height: 28px;
+                }
+            }
+
+            .content {
+                font-family: PingFangSC-Regular;
+                font-size: 30px;
+                color: #444;
+                letter-spacing: 0;
+                line-height: 48px;
+                margin-bottom: 20px;
+            }
+
+            .reply {
+                background: #F4F4F4;
+                border-radius: 6px;
+                padding: 24px;
+                margin-bottom: 20px;
+
+                &--info {
+                    font-family: PingFangSC-Regular;
+                    .flex-space-between-center;
+                    margin-bottom: 14px;
+
+                    .name {
+                        font-size: 26px;
+                        color: #666;
+                        letter-spacing: 0;
+                        line-height: 36px;
+                    }
+
+                    .date {
+                        font-size: 22px;
+                        color: #8E8E93;
+                        letter-spacing: 0;
+                        line-height: 32px;
+                    }
+                }
+
+                &--content {
+                    font-family: PingFangSC-Regular;
+                    font-size: 26px;
+                    color: #444;
+                    letter-spacing: 0;
+                    line-height: 40px;
+                }
+            }
+
+            .append {
+                font-family: PingFangSC-Regular;
+                margin-bottom: 20px;
+
+                &--info {
+                    font-size: 24px;
+                    color: #666;
+                    letter-spacing: 0;
+                    line-height: 34px;
+                    margin-bottom: 12px;
+                }
+
+                &--content {
+                    font-size: 30px;
+                    color: #444;
+                    letter-spacing: 0;
+                    line-height: 48px;
+                }
+            }
+            
+        }
+    }
+}
+
+/* 详情内部样式 */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.common-padding {
+    padding: 44px 30px 50px;
+}
+
+.next-img {
+    width:10px;
+    height:20px;
+}
+
+/* 详情内部cell */
+.cell {
+    margin-bottom: 44px;
+}
+
+/* 轮播图 */
+.swiper {
+    width: 100%;
+    height: 406px;
+    overflow: hidden;
+
+    &-container,
+    &-slide {
+        position: relative;
+    }
+
+    &__play {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 152px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__img img {
+        width: 100%;
+        height: 406px; 
+    }
+
+    &__label {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        z-index: 1;
+
+        a {
+            width: 90px;
+            height: 44px;
+            background: rgba(255,255,255,0.80);
+            border-radius: 22px;
+            font-family: PingFangSC-Regular;
+            font-size: 20px;
+            color: #444444;
+            text-align: center;
+            display: block;
+            float: left;
+            line-height: 44px;
+
+            &.active {
+                background: #24C77E;
+                color: #FFFFFF;
+            }
+
+            &:nth-of-type(1) {
+                margin-right: 20px;
+            }
+        }
+
+        
+    }
+
+    &_pagination {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0 0 4px rgba(0,0,0,0.50);
+        line-height: 28px;
+        &-current {
+
+        }
+    }
+}
+
+/* 公司信息 */
+.company-info {
+    padding: 0 30px;
+    background: #FFFFFF;
+
+    &__des {
+        display: flex;
+        padding-top: 48px;
+
+        &--logo {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #E3E3E3;
+            border-radius: 50%;
+            padding: 10px;
+            overflow: hidden;
+            margin-right: 36px;
+
+            img {
+                width: 88px;
+	            height: 88px;
+            }
+        }
+
+        &--title {
+            .flex-column-center;
+
+            .top {
+                .flex-row-center;
+                margin-bottom: 18px;
+
+                .name {
+                    font-family: PingFangSC-Medium;
+                    font-size: 44px;
+                    color: #444;
+                    letter-spacing: 0;
+                    line-height: 48px;
+                }
+
+                .certified {
+                    line-height: 28px;
+                    margin-left: 10px;
+
+                    img {
+                        width:80px;
+                        height:28px; 
+                    }
+                }
+            }
+
+            .num {
+                font-family: PingFangSC-Regular;
+                font-size: 26px;
+                color: #444;
+                line-height: 36px;
+                letter-spacing: 0;
+
+                span {
+                    margin-right: 30px;
+                    display: inline-block;
+                }
+
+                span:last-child {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    &__tag {
+        .flex-row-center;
+        padding: 40px 0;
+
+        a {
+            // height: 56px;
+            line-height: 34px;
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            letter-spacing: 0;
+            border-radius: 6px;
+            padding: 10px 18px;
+            margin-right: 24px;
+            display: block;
+            white-space: nowrap;
+
+            &:nth-of-type(1) {
+                color: #FF8A00;
+                border: 1px solid rgba(255,138,0,0.30);
+            }
+
+            &:nth-of-type(2) {
+                color: #F56022;
+                border: 1px solid rgba(245,96,34,0.30);
+            }
+            &:nth-of-type(3) {
+                color: #57A5FF;
+                border: 1px solid rgba(87,165,255,0.30);
+            }
+            &:nth-of-type(4) {
+                color: #1DCEA4;
+                border: 1px solid rgba(29,206,164,0.30);
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    /* 位置 */
+    &__location {
+        padding: 29px 0 28px;
+        background: #fff;
+        font-family: PingFangSC-Regular;
+        font-size: 26px;
+        color: #666;
+        letter-spacing: 0;
+        line-height: 36px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        .flex-space-between-center;
+
+        &--icon {
+            display: flex;
+            flex: 1;
+            padding-right: 18px;
+            border-right:1px solid #eee;
+
+            img {
+                width: 24px;
+                height: 28px;
+                margin-right: 18px;
+                margin-top: 6px;
+            }
+
+            p {
+                flex: 1;
+            }
+        }
+
+        &--phone {
+            .flex-center;
+
+            img {
+                width: 31px;
+                height: 39px;
+                margin-left: 36px;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    /* 特色服务 */
+    &__service {
+        font-size: 26px;
+        line-height: 33px;
+        padding: 38px 0 36px;
+
+        a {
+            .flex-row-center;
+        }
+
+        &--title {
+            font-family: PingFangSC-Regular;
+            color: #8E8E93;
+            letter-spacing: 0;
+            margin-right: 20px;
+        }
+
+        &--content {
+            width: 494px;
+            margin-right:50px;
+
+            &_item {
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                color: #444;
+                letter-spacing: 0;
+
+                .point {
+                    margin: 0 14px;
+                }
+            }
+        }
+        
+        &--img {
+            img {
+                .next-img;
+            }
+        }
+    }
+}
+
+/* 优惠活动 */
+.preferential-activities {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__detail {
+        .flex-space-between-center;
+        height: 172px;
+        padding: 30px 30px 24px 22px;
+        position: relative;
+        margin-bottom: 30px;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0
+        }
+
+        &.coupon {
+            // margin-bottom: 30px;
+        }
+
+        > div {
+            width: 434px;
+            display: flex;
+
+            img {
+                position: relative;
+                width: 28px;
+                height: 28px;
+                margin-right: 16px;
+                margin-top: 4px;
+            }
+        }
+
+        img.background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--type {
+            position: relative;
+            font-family: PingFangSC-Medium;
+            font-size: 28px;
+            line-height: 40px;
+            color: #444;
+            margin-bottom: 6px;
+
+            span {
+                font-family: PingFangSC-Regular;
+                font-size: 20px;
+                color: #666;
+            }
+        }
+
+        &--des {
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #666;
+            line-height: 36px;
+            position: relative;
+            white-space: pre-wrap;
+        }
+
+        a {
+            width: 114px;
+            height: 50px;
+            background: #FF8A00;
+            border-radius: 50px;
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #FFF;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+}
+
+/* 装修案例 */
+.decoration-case {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        &--item:nth-of-type(odd) {
+            margin-right: 32px;
+        }
+
+        &--item:nth-of-type(-n+2) {
+            margin-bottom: 56px;
+        }
+        
+    }
+}
+
+/* 设计团队 */
+.design-team {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+       display: flex;
+       overflow-x: scroll; 
+
+       &--item {
+           margin-right: 50px;
+
+           &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+       }
+
+    }
+}
+
+/* 工艺展示 */
+.technology {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+
+        &--item {
+            margin-bottom: 40px;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+
+        
+    }
+}
+
+/* 装修工地*/
+.building-site {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        &--item:nth-of-type(odd) {
+            margin-right: 32px;
+        }
+        
+    }
+}
+
+/* 施工团队 */
+.construction-team {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+       display: flex;
+       overflow-x: scroll; 
+
+       &--item {
+            margin-right: 50px;
+
+            &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+        }   
+    }
+}
+
+/* 签约业主评价 */
+.evaluation {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+    
+    .view-all {
+        display: block;
+        text-align: center;
+        font-size: 26px;
+        color: #8E8E93;
+        letter-spacing: 0;
+        line-height: 36px;
+        margin-top: 34px;
+
+        img {
+            .next-img;
+            margin-left:8px;
+            vertical-align: inherit;
+        }
+    }
+}
+
+/* 业主日记 */
+.diary {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__list {
+        display: flex;
+        overflow-x: scroll; 
+
+        &--item {
+
+            .case__list--item {
+                width: 320px;
+
+                div {
+                    height: 180px;
+                    position: relative;
+                    background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(155,155,155,0.00) 39%, rgba(0,0,0,0.40) 100%);
+                }
+
+                .owner-info {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    width: auto;
+                    height: 40px;
+                    background-image: none;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        margin-left: 12px;
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        color: #FFF;
+                        line-height: 34px;
+                    }
+                }
+
+                .title {
+                    font-family: PingFangSC-Medium;
+                    line-height: 34px;
+                    margin: 30px 0 12px;
+                }
+
+                .des {
+                    font-family: PingFangSC-Regular;
+                    font-size: 26px;
+                    color: #666;
+                    line-height: 40px;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+            }
+            margin-right: 30px;
+
+            &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+        }  
+    }
+}
+
+/* 商家信息 */
+.business-info {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    &__table {
+        li {
+            margin-bottom: 18px;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+        &--item {
+            display: flex;
+            font-family: PingFangSC-Regular;
+            font-size: 26px;
+            line-height: 44px;
+
+            label {
+                color: #8E8E93;
+            }
+
+            p {
+                margin-left: 10px;
+                color: #444;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.company-recommend {
+    background: #FFFFFF;
+    margin-top: 20px;
+    .common-padding;
+
+    .divider {
+        margin-bottom: 42px;
+
+        &__line {
+            width: 246px;
+        }
+    }
+
+    &__list {
+        &--item {
+            margin-bottom: 50px;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+
+            .recommend {
+                &__item {
+                    display: flex;
+                    
+                    &--img {
+                        width: 150px;
+                        height: 120px;
+                        background: #FFFFFF;
+                        border: 1px solid #E3E3E3;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        flex-shrink: 0;
+
+                        img {
+                            display: block;
+                            width: 118px;
+                            height: 118px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    &--info {
+                        flex: 1;
+                        position: relative;
+                        margin-left: 20px;
+
+                        .tag {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-family: PingFangSC-Regular;
+                            font-size: 22px;
+                            color: #D8D8D8;
+                            letter-spacing: 0;
+                            line-height: 32px;
+                        }
+
+                        .company-name {
+                            font-family: PingFangSC-Medium;
+                            font-size: 32px;
+                            color: #444;
+                            line-height: 44px;
+                            margin-bottom: 6px;
+                        }
+
+                        .num {
+                            margin-bottom: 10px;
+
+                            span {
+                                font-family: PingFangSC-Regular;
+                                font-size: 24px;
+                                color: #666;
+                                line-height: 34px;
+                                margin-right: 20px;
+                            }
+                        }
+
+                        .company-info__tag {
+                            padding: 0;
+                            margin-bottom: 11px;
+
+                            i {
+                                padding: 0 10px;
+                                margin-right: -10px;
+                                font-size: 20px;
+                                -webkit-transform: scale(.8);
+
+                                &:nth-of-type(1) {
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+
+                        .company-info__detail {
+                            display: flex;
+
+                            &:nth-last-of-type(1) {
+                                margin-top: 10px;
+                            }
+
+                            .img--lazy {
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                            .omit {
+                                opacity: 0.88;
+                                font-family: PingFangSC-Regular;
+                                font-size: 24px;
+                                color: #444;
+                                line-height: 34px;
+                                position: relative;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}

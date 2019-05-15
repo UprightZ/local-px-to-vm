@@ -1,0 +1,152 @@
+/* 装修案例 */
+.common-padding {
+  padding: 44px 30px 50px;
+}
+/* case装修案例组件样式 */
+.case__list--item {
+  width: 329px;
+  font-family: PingFangSC-Regular;
+}
+.case__list--item div {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+}
+.case__list--item div img {
+  width: 100%;
+  height: auto;
+}
+.case__list--item div img.threedD {
+  width: 110px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.case__list--item .title {
+  font-size: 30px;
+  line-height: 42px;
+  color: #444;
+  letter-spacing: 0;
+  margin: 14px 0 6px;
+  white-space: nowrap;
+}
+.case__list--item .des {
+  font-size: 22px;
+  line-height: 32px;
+  color: #8E8E93;
+  letter-spacing: 0;
+}
+.case__list--item .des span {
+  padding-right: 40px;
+}
+/* 设计师详情*/
+.designer__info {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0 44px;
+  border: 1px solid #eee;
+}
+.designer__info--logo {
+  width: 149px;
+  height: 149px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+}
+.designer__info--name {
+  margin-top: 30px;
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #222;
+}
+.designer__info--exp {
+  margin-top: 20px;
+  font-family: PingFangSC-Light;
+  font-size: 28px;
+  color: #8e8e93;
+}
+.designer__info--exp span {
+  margin-right: 2px;
+  display: inline-block;
+}
+.designer__info--exp span:last-child {
+  margin-right: 0;
+}
+.designer__tab {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 28px;
+  color: #333;
+  padding: 0 173px;
+}
+.designer__tab > div {
+  position: relative;
+  padding: 28px 0 23px;
+}
+.designer__tab > div.active:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  height: 4px;
+  background-color: #34c083;
+  border-radius: 2px;
+}
+.designer__production {
+  background-color: #fff;
+  margin-top: 25px;
+}
+.designer__production .tab {
+  padding: 40px 30px;
+}
+.designer__production__list--item {
+  margin-bottom: 60px;
+}
+.designer__production__list--item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.designer__production--works .case__list--item {
+  width: 100%;
+  height: auto;
+}
+.designer__production--works .case__list--item div {
+  height: auto;
+}
+.designer__production--works .case__list--item .title {
+  font-size: 34px;
+  margin: 25px 0 18px;
+}
+.designer__production--works .case__list--item .des {
+  font-size: 28px;
+}
+.designer__production--person.tab {
+  padding-top: 60px;
+}
+.designer__production--person .introduction__item {
+  margin-bottom: 60px;
+}
+.designer__production--person .introduction__item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.designer__production--person .introduction__item--title {
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #222;
+}
+.designer__production--person .introduction__item--detail {
+  padding-top: 40px;
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  line-height: 48px;
+  color: #222;
+  word-wrap: break-word;
+  word-break: break-all;
+}

@@ -1,0 +1,261 @@
+@import '../style.less';
+
+/* divider组件样式 */
+.divider {
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #8E8E93;
+    display: table;
+    white-space: nowrap;
+    height: auto;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
+}
+
+.divider:before {
+    background-position: right 20px top 50%;
+}
+
+.divider:after {
+    background-position: left 20px top 50%;
+}
+
+// 页面样式
+.billboard {
+    // 顶部banner
+    &__banner {
+        position: relative;
+        width: 100%;
+        height: 320px;
+
+        &--img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &--rule {
+            position: absolute;
+            top: 36px;
+            right: 24px;
+            width: 88px;
+            height: 42px;
+            line-height: 42px;
+            background: rgba(0,0,0,0.60);
+            border-radius: 21px;
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #FFF;
+            text-align: center;
+            outline: none;
+            border: none;
+        }
+        &--des {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .divider__content {
+                font-family: PingFangSC-Regular;
+                font-size: 30px;
+                color: #FFF;
+            }
+
+            .banner__des--detail {
+                padding-top: 18px;
+                font-family: PingFangSC-Semibold;
+                font-size: 46px;
+                color: #FFFF;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &__list {
+        padding: 30px 24px;
+
+        li:last-child .billboard__list--item {
+            margin-bottom: 0;
+        }
+
+        &--item {
+            position: relative;
+            background: #FFF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            padding: 40px 28px 40px 24px;
+            margin-bottom: 28px;
+
+            .rank {
+                width: 52px;
+                margin-right: 24px;
+            }
+
+            span.rank {
+                font-family: PingFangSC-Medium;
+                font-size: 48px;
+                color: #FF8A00;
+                padding-left: 8px;
+            }
+
+            .company__info {
+                display: flex;
+
+                &--logo {
+                    .flex-center;
+                    width: 128px;
+                    height: 128px;
+                    border: 1px solid #E5E5E5;
+                    margin-right: 16px;
+
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+
+                &--detail {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .company {
+                        &-des {
+                            display: flex;
+                            align-items: center;
+
+                            .name {
+                                font-family: PingFangSC-Medium;
+                                line-height: 44px;
+                                font-size: 32px;
+                                color: #222;
+                                margin-right: 12px;
+                            }
+
+                            .tag {
+                                width: 30px;
+                                height: 30px;
+                                margin-left: 12px;
+                            }
+                        }
+
+                        &-data {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 6px;
+                            font-family: PingFangSC-Regular;
+                            font-size: 24px;
+                            color: #666;
+                            line-height: 32px;
+
+                            em {
+                                display: inline-block;
+                                width: 1px;
+                                height: 16px;
+                                background: #E3E3E3;
+                                margin: 0 12px;
+                            }
+                        }
+
+                        &-tag {
+                            margin-top: 11px;
+                            display: flex;
+
+                            span {
+                                font-family: PingFangSC-Regular;
+                                font-size: 18px;
+                                border-radius: 4px;
+                                line-height: 26px;
+                                padding: 3px 8px;
+                                margin-right: 8px;
+                                color: #24C77E;
+                                border: 1px solid rgba(36, 199, 126, 0.3);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+            .next {
+                width: 10px;
+                height: 18px;
+                position: absolute;
+                right: 28px;
+            }
+
+        }
+    }
+
+    &__layer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        &--detail {
+            width: 560px;
+            height: 676px;
+            padding: 50px 40px 70px;
+            background: #FFF;
+            border-radius: 24px;
+
+            .layer {
+                &-title {
+                    font-family: PingFangSC-Semibold;
+                    font-size: 34px;
+                    line-height: 48px;
+                    color: #222;
+                    text-align: center;
+                    padding-bottom: 34px;
+                }
+
+                &-info {
+                    height: 474px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 30px;
+                    color: #222;
+                    overflow-y: scroll;
+                    // white-space: pre-wrap;
+                    white-space: pre-line;
+                }
+            }
+        }
+
+        .close-icon {
+            display: block;
+            width: 56px;
+            height: 56px;
+            margin: 50px auto 0;
+        }
+        
+    }
+}
+
+.layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 11;
+}
+

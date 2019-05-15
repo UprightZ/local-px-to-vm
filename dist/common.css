@@ -7,14 +7,82 @@ html,
 body,
 div,
 span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
+blockquote,
+pre,
 a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
 em,
 img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
 i,
+center,
+dl,
+dt,
+dd,
+ol,
 ul,
 li,
+fieldset,
+form,
 label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
 video {
   margin: 0;
   padding: 0;
@@ -28,12 +96,54 @@ html {
   line-height: 1;
 }
 
+ol,
 ul {
   list-style: none;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
 a img {
   border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
 html,
@@ -76,14 +186,68 @@ html,
 body,
 body div,
 span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
 em,
 img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
 i,
+dl,
+dt,
+dd,
+ol,
 ul,
 li,
+fieldset,
+form,
 label,
-video {
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -114,7 +278,9 @@ body {
   background-color: #f4f4f4;
 }
 
-img {
+img,
+object,
+embed {
   max-width: 100%;
 }
 
@@ -135,3 +301,18 @@ img {
 }
 
 /* let's clear some floats */
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: '\0020';
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}

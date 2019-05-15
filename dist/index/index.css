@@ -60,7 +60,7 @@
 }
 .case__list--item div {
   width: 100%;
-  height: 25.333vw;
+  height: 27.2vw;
   overflow: hidden;
   border-radius: 0.8vw;
   position: relative;
@@ -156,6 +156,7 @@
   line-height: 5.333vw;
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 /* 业主评论样式 */
@@ -233,7 +234,13 @@
   margin-right: 0;
 }
 .evaluation__item--right .result .score--level p .icon-star1 {
-  background-image: url(image/Select.png);
+  background-image: url(../image/Select.png);
+}
+.evaluation__item--right .result .score--level p .icon-star2 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAB8ElEQVRYhd3WPWsUURTG8d8GI0TEKMRUE40gpA5qraWVnY1iIaIiKGIRMDFFEvDlI6QR/AiaKq1NGuMHCFgISZFmMZGQTtZiz8ZxsjOTzO6O4APDzL3nzHn+M3fPnW20VvSixtb05ns8QKtKgSRJDPWEwG3cj3Nl9QJxAktxvRTj2iHuYSqup2JcK8RJLGbmFmO+NognmMjMTcR8LRCnMZcTm4v4wCGeYzwnNh7xgUKcxUxJzkzkDQziJUZLckYj78gq6+0GLuMaruLxEes+0+6UdXzBNwU7ahqiY3glc5w5onFap/AiNf6Jr5njAKzRWjGP69pPeqy1hK3pzQqM4EfAfB7SfmU3qgD0qHPaD78+hFU8rBmgo0dJkqx2uuMD5msGmA/fv1r0NZZrAlgOP1kIeIpPAwb4GD4HykL8wh2sDQhgDXfDJxcC9nELG30G2Ii6+9lA3rbdxE1s9wlgO+o1uwWLvh3fHf7jUlULUa+ryj5gY32COF8ULIO40CeIwjplEBf/J4jJXiD++XKMYaRPECMKfuRFEGVLsavdwpfivFuSn1uvCCLvFXbMJ/3p/4UYF8HkLslx3kQTr1LmO5n4TgpmzuHdsRJE56YmZqP4my7mWe3gbeTPpmAqLcdwyvwd9krMs9qL+zoww3mJvwELR1h1AlRg1QAAAABJRU5ErkJggg==);
+}
+.evaluation__item--right .result .score--level p .icon-star3 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAB50lEQVRYhd3WvWoUYRTG8d8uRoiIUYipJhpByAWotZZWdjaKhYiKoIhFwKxbJAE/LiGN4CVolzZNGuMFBCyEbdIsbiSkEy32bBwnOzOb/RjBB4aZ9z1nzvOfefe8s7VWq2UE1fAeD/BrmAJJkqiPQoDbuB/noTUKxAmsxfVajCuHuIfFuF6McaUQJ7GamVuN+cognmA+Mzcf85VAnEYjJ9aI+MQhnmMuJzYX8YlCnMVSSc5S5E0M4iVmSnJmIm9glfV2DZdxDVfxeMC6z3Q7ZRuf8VXBjpqG6BleyRxnBjRO6xRepMY/8CVzHILVWq1WE9d1n/RYazmivgfMZl33ld2oGADO6T78dh0beFgxQE+PkiTZ6HXHBzQrBmiG718t+hrrFQGsh58sBDzFpwkDfAyfQ2UhfuIOtiYEsIW74ZMLAQe4hZ0xA+xE3YNsIG/bbuMmdscEsBv12v2CRd+Ob47+cRlWK1Gvr8o+YLNjgjhfFCyDuDAmiMI6ZRAX/yeIhVEg/vlyzGJ6TBDTCn7kRRBlS7Gn28KX4rxXkp9brwgi7xX2zBf86f+VGBfB5C7Jcd5EG69S5p1MvJOCaTi6Ow4F0bupjeUo/qaPeVYdvI385RTMUMsxlTJ/h/0S86z2474ezFRe4m/5o1Z1F0CfmAAAAABJRU5ErkJggg==);
 }
 .evaluation__item--right .result .stage {
   border: 1px solid #D8D8D8;
@@ -304,11 +311,37 @@
   line-height: 6.4vw;
 }
 /* 详情内部样式 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
+}
+.common-padding {
+  padding: 5.867vw 4vw 6.667vw;
+}
+.next-img {
+  width: 1.333vw;
+  height: 2.667vw;
 }
 /* 详情内部cell */
 .cell {
@@ -535,6 +568,9 @@
   color: #444;
   letter-spacing: 0;
 }
+.company-info__service--content_item .point {
+  margin: 0 1.867vw;
+}
 .company-info__service--img img {
   width: 1.333vw;
   height: 2.667vw;
@@ -657,24 +693,12 @@
   margin-top: 2.667vw;
   padding: 5.867vw 4vw 6.667vw;
 }
-.building-site__list--item .cell {
-  margin-bottom: 0;
+.building-site__list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.building-site__list--item .cell__bd p {
-  width: 61.067vw;
-}
-.building-site__list--item .cell__bd--name {
-  font-family: PingFangSC-Medium;
-  font-size: 4vw;
-  color: #444;
-  line-height: 5.6vw;
-  margin-bottom: 1.067vw;
-}
-.building-site__list--item .cell__bd--address {
-  font-family: PingFangSC-Regular;
-  font-size: 3.467vw;
-  color: #8E8E93;
-  line-height: 3.2vw;
+.building-site__list--item:nth-of-type(odd) {
+  margin-right: 4.267vw;
 }
 /* 施工团队 */
 .construction-team {
@@ -766,6 +790,7 @@
   line-height: 5.333vw;
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 .diary__list--item:nth-last-of-type(1) {

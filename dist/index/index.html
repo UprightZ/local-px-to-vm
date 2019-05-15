@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <!-- 轮播 -->
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper__play">
+                            <img src="../image/play.png" alt="">
+                        </div>
+                        <div class="swiper__video">
+                            <video src="http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4" width="375" height="203" poster="../image/swiper.png"></video>
+                        </div>
+                        <div class="swiper__img" style="display:none;">
+                            <img src="../image/swiper.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper__label">
+                    <a href="javascript:void(0);">视频</a>
+                    <a href="javascript:void(0);" class="active">图片</a>
+                </div>
+                <div class="swiper_pagination">
+                    <span class="swiper_pagination--current">1</span> / <span class="swiper_pagination--total">6</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 公司信息 -->
+        <div class="company-info">
+            <!-- 描述 -->
+            <div class="company-info__des">
+                <div class="company-info__des--logo">
+                    <img src="../image/headphoto.jpg" alt="">
+                </div>
+                <div class="company-info__des--title">
+                    <div class="top">
+                        <p class="name">弘之高装饰</p>
+                        <div class="certified">
+                            <img src="../image/certified.png" alt="">
+                        </div>
+                    </div>
+                    <div class="num">
+                        <span>案例：154</span>
+                        <span>工地：45</span>
+                        <span>口碑：3445</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 服务标签 -->
+            <div class="company-info__tag">
+                <a href="">先施工后付款</a>
+                <a href="">土巴兔质检</a>
+                <a href="">免息分期</a>
+                <a href="">智能家居</a>
+            </div>
+
+            <!-- 位置 -->
+            <div class="company-info__location">
+                <div class="company-info__location--icon">
+                    <img src="../image/location.png" alt="">
+                    <p>南山大道与桂庙路交汇处麒麟花园44号8栋仰天碧阁</p>
+                </div>
+                <div class="company-info__location--phone">
+                    <a href="tel:13192847849">
+                        <img src="../image/call.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 特色服务 -->
+            <div class="company-info__service">
+                <a href="javascript:void(0);">
+                    <span class="company-info__service--title">特色服务</span>
+                    <div class="company-info__service--content ellipsis">
+                        <p class="company-info__service--content_item">
+                            <span>VR体验</span>
+                            <span>·</span>
+                        </p>
+                        <p class="company-info__service--content_item">
+                            <span>到店学习</span>
+                            <span>·</span>
+                        </p>
+                        <p class="company-info__service--content_item">
+                            <span>免费上门量房</span>
+                            <span>·</span>
+                        </p>
+                        <p class="company-info__service--content_item">
+                            <span>免费上门量房</span>
+                            <span>·</span>
+                        </p>
+                    </div>
+                    <div class="company-info__service--img">
+                        <img src="../image/next.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 优惠活动 -->
+        <div class="preferential-activities">
+            <div class="cell">
+                <div class="cell__bd">
+                    优惠活动
+                </div>
+                <!-- <div class="cell__navigate">
+                    123
+                    <img src="../image/next.png" alt="">
+                </div> -->
+            </div>
+            <div class="preferential-activities__detail coupon">
+                <img class="background" src="../image/coupon.png" alt="">
+                <div>
+                    <img src="../image/gift.png" alt="">
+                    <div>
+                        <p class="preferential-activities__detail--type">优惠券<span>（07.30-08.30）</span></p>
+                        <p class="preferential-activities__detail--des">1、免费测量+出方案+预算；2、定金1000元可抵扣2000元工程款</p>
+                    </div>
+                    
+                </div>
+                <a href="javascript:void(0);">领取</a>
+            </div>
+            <div class="preferential-activities__detail promotion">
+                <img class="background" src="../image/promotion.png" alt="">
+                <div>
+                    <img src="../image/money.png" alt="">
+                    <div>
+                        <p class="preferential-activities__detail--type">促销券<span>（07.30-08.30）</span></p>
+                        <p class="preferential-activities__detail--des">1、免费测量+出方案+预算</p>
+                    </div>
+                </div>
+                <a href="javascript:void(0);">咨询</a>
+            </div>
+        </div>
+
+        <!-- 装修案例 -->
+        <div class="decoration-case">
+            <div class="cell">
+                <div class="cell__bd">
+                    装修案例
+                </div>
+                <div class="cell__navigate">
+                    共50个
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="decoration-case__list">
+                <li class="decoration-case__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                                <img class="threedD" src="../image/3dsmall.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des ellipsis">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="decoration-case__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des ellipsis">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="decoration-case__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des ellipsis">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="decoration-case__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des ellipsis">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 设计团队 -->
+        <div class="design-team">
+            <div class="cell">
+                <div class="cell__bd">
+                    设计团队
+                </div>
+                <div class="cell__navigate">
+                    共39人
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="design-team__list">
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="design-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 工艺展示 -->
+        <div class="technology">
+            <div class="cell">
+                <div class="cell__bd">
+                    工艺展示
+                </div>
+                <div class="cell__navigate">
+                    更多
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="technology__list">
+                <li class="technology__list--item">
+                    <div class="technology__item">
+                        <a href="">
+                            <div class="technology__item--img">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <div class="technology__item--right">
+                                <p class="title ellipsis">设计总监</p>
+                                <p class="des">工艺描述：
+                                ① 保持墙面平整
+                                新墙面通常墙面比较平整，无需过多处理。对于旧墙面来说，多少都会存在掉皮、裂纹等问题，这时不...</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="technology__list--item">
+                    <div class="technology__item">
+                        <a href="">
+                            <div class="technology__item--img">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <div class="technology__item--right">
+                                <p class="title ellipsis">设计总监</p>
+                                <p class="des">工艺描述：
+                                ① 保持墙面平整
+                                新墙面通常墙面比较平整，无需过多处理。对于旧墙面来说，多少都会存在掉皮、裂纹等问题，这时不...</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="technology__list--item">
+                    <div class="technology__item">
+                        <a href="">
+                            <div class="technology__item--img">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <div class="technology__item--right">
+                                <p class="title ellipsis">设计总监</p>
+                                <p class="des">工艺描述：
+                                ① 保持墙面平整
+                                新墙面通常墙面比较平整，无需过多处理。对于旧墙面来说，多少都会存在掉皮、裂纹等问题，这时不...</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 装修工地 -->
+        <div class="building-site">
+            <div class="cell">
+                <div class="cell__bd">
+                    装修工地（23个）
+                </div>
+                <div class="cell__navigate">
+                    查看更多
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="building-site__list">
+                <li class="building-site__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">东海花园朱先生新居</p>
+                            <p class="des ellipsis">深圳学府花园</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="building-site__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">东海花园朱先生新居</p>
+                            <p class="des ellipsis">深圳学府花园</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 施工团队 -->
+        <div class="construction-team">
+            <div class="cell">
+                <div class="cell__bd">
+                    施工团队
+                </div>
+                <div class="cell__navigate">
+                    共39人
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="construction-team__list">
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="construction-team__list--item">
+                    <div class="team__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">设计总监</p>
+                            <p class="des ellipsis">9年经验</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 签约业主评价 -->
+        <div class="evaluation">
+            <div class="cell">
+                <div class="cell__bd">
+                    土巴兔签约业主评价
+                </div>
+                <div class="cell__navigate">
+                    共50个
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="evaluation__list">
+                <li class="evaluation__list--item">
+                    <div class="evaluation__item">
+                        <a href="">
+                            <div class="evaluation__item--img"> 
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <div class="evaluation__item--right">
+                                <div class="title">
+                                    <span class="title--name">开始梦想之旅</span>
+                                    <span class="title--date">08-20</span>
+                                </div>
+                                <div class="result">
+                                    <div class="score">
+                                        <div class="score--level">
+                                            <label>施工</label>
+                                            <p>
+                                                <!-- <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em> -->
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="score--level">
+                                            <label>施工</label>
+                                            <p>
+                                                <!-- <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em> -->
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="score--level">
+                                            <label>施工</label>
+                                            <p>
+                                                <!-- <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em>
+                                                    <em class="icon icon-star1"></em> -->
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                                <img src="../image/Select.png" class="icon icon-star1" alt="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="stage">泥木书店</div>
+                                </div>
+                                <div class="content">循环水系统的功能是将冷却水 (海水) 送至高低压凝气器去冷却汽轮机低压缸。</div>
+                                <div class="reply">
+                                    <p class="reply--info">
+                                        <span class="name">商家回复：</span>
+                                        <span class="date">3小时前</span>
+                                    </p>
+                                    <p class="reply--content">以维持高低压凝气器的真空，续循环水统舍器的续循环水统舍器的。</p>
+                                </div>
+                                <div class="append">
+                                    <p class="append--info">【追加评论】</p>
+                                    <p class="append--content">利用挑空如何改造成阳光房，这些方面都是这个房子改造的亮点！</p>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a class="view-all">
+                查看全部真实评价
+                <img src="../image/next.png" alt="">
+            </a>
+        </div>
+
+        <!-- 业主日记 -->
+        <div class="diary">
+            <div class="cell">
+                <div class="cell__bd">
+                    业主日记
+                </div>
+                <div class="cell__navigate">
+                    共50个
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <ul class="diary__list">
+                <li class="diary__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                                <div class="owner-info">
+                                    <img class="owner-info-img" src="../image/case.png" alt="">
+                                    <span>大是大非</span>
+                                </div>
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="diary__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="diary__list--item">
+                    <div class="case__list--item">
+                        <a href="">
+                            <div>
+                                <img src="../image/case.png" alt="">
+                            </div>
+                            <p class="title ellipsis">塞纳时光李先生新居</p>
+                            <p class="des">112㎡ / 三居／全包</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 商家信息 -->
+        <div class="business-info">
+            <div class="cell">
+                <div class="cell__bd">
+                    商家信息
+                </div>
+                <div class="cell__navigate">
+                    更多
+                    <img src="../image/next.png" alt="">
+                </div>
+            </div>
+            <div class="business-info__table">
+                <ul>
+                    <li>
+                        <div class="business-info__table--item">
+                            <label>承接类型：</label>
+                            <p>家公装都做</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="business-info__table--item">
+                            <label>承接价位：</label>
+                            <p>5～30万以上、100万以上</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="business-info__table--item">
+                            <label>服务区域：</label>
+                            <p>南山区、宝安区、龙华区、盐田区、福田区、大鹏新区</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 更多装修公司推荐-->
+        <div class="company-recommend">
+            <div class="divider">
+                <div class="divider__content">其他人也喜欢</div>
+                <div class="divider__line"></div>
+            </div>
+            <ul class="company-recommend__list">
+                <li class="company-recommend__list--item">
+                    <div class="recommend__item">
+                        <div class="recommend__item--img">
+                            <img src="../image/case.png" alt="">
+                        </div>
+                        <div class="recommend__item--info">
+                            <span class="tag">广告</span>
+                            <p class="company-name">佳美域装饰</p>
+                            <div class="num">
+                                <span>案例：256</span>
+                                <span>工地：143</span>
+                            </div>
+                            <div class="company-info__tag">
+                                <i>先施工后付款</i>
+                                <i>土巴兔质检</i>
+                                <i>免息分期</i>
+                                <i>智能家居</i>
+                            </div>
+                            <div class="company-info__detail">
+                                <img class="img--lazy" src="../image/case.png" >
+                                <p class="company-coupon omit">工程预算达到10万享受2888元优惠</p>
+                            </div>
+                            <div class="company-info__detail">
+                                <img class="img--lazy" src="../image/case.png">
+                                <p class="company-sale omit">活动期间客户量房诚意金500元抵2000元</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-recommend__list--item">
+                    <div class="recommend__item">
+                        <div class="recommend__item--img">
+                            <img src="../image/case.png" alt="">
+                        </div>
+                        <div class="recommend__item--info">
+                            <span class="tag">广告</span>
+                            <p class="company-name">佳美域装饰</p>
+                            <div class="num">
+                                <span>案例：256</span>
+                                <span>工地：143</span>
+                            </div>
+                            <div class="company-info__tag">
+                                <a href="">先施工后付款</a>
+                                <a href="">土巴兔质检</a>
+                                <a href="">免息分期</a>
+                                <a href="">智能家居</a>
+                            </div>
+                            <div class="company-info__detail">
+                                <img class="img--lazy" src="../image/case.png">
+                                <p class="company-sale omit">活动期间客户量房诚意金500元抵2000元</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

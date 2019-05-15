@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公司列表</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./companyList.css">
+    <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./companyList.js"></script>
+</head>
+<body>
+    <div class="main clearfix">
+        <!-- 搜索 -->
+        <div class="search">
+            <div class="form">
+                <input id="searchKey" type="text" placeholder="输入您想看的装修公司" autocomplete="off">
+                <!-- onkeydown="javascript:if(event.keyCode==13) search('key');" -->
+                <button>搜索公司</button>
+            </div>
+        </div>
+        <!-- 筛选栏 -->
+        <ul class="filter-nav__list">
+            <li class="filter-nav__list--item">
+                <span>综合</span>
+                <img src="../image/gray.png" alt="">
+            </li>
+            <li class="filter-nav__list--item">
+                <span>区域</span>
+                <img src="../image/gray.png" alt="">
+            </li>
+            <li class="filter-nav__list--item">
+                <span>更多</span>
+                <img src="../image/gray.png" alt="">
+            </li>
+        </ul>
+
+        <!-- 筛选详情 -->
+        <!-- active -->
+        <div class="filter-layer">
+            <!-- 综合 -->
+            <div class="filter-layer__channel">
+                <ul class="type">
+                    <li class="type--item active">综合</li>
+                    <li class="type--item">工地</li>
+                    <li class="type--item">案例</li>
+                    <li class="type--item">信用</li>
+                    <li class="type--item">距离</li>
+                </ul>
+            </div>
+
+            <!-- 区域 -->
+            <div class="filter-layer__channel">
+                <ul class="area">
+                    <li class="area--item active">全部</li>
+                    <li class="area--item">南山区</li>
+                    <li class="area--item">福田区</li>
+                    <li class="area--item">盐田保税区</li>
+                    <li class="area--item">特别行政区</li>
+                    <li class="area--item">最多五个字</li>
+                </ul>
+            </div>
+
+            <!-- 更多 -->
+            <!-- style="display: block" -->
+            <div class="filter-layer__channel more-channel">
+                <!-- 施工方式 -->
+                <div class="construction-methods more">
+                    <p class="title">施工方式</p>
+                    <ul class="choose radio">
+                        <li class="choose--item">半包装修</li>
+                        <li class="choose--item">全包装修</li>
+                        <li class="choose--item">纯设计</li>
+                        <li class="choose--item">软装</li>
+                        <li class="choose--item">拎包入住</li>
+                    </ul>
+                </div>
+
+                <!-- 户型 -->
+                <div class="house-type more">
+                    <p class="title">类型</p>
+                    <ul class="choose radio">
+                        <li class="choose--item active">不限</li>
+                        <li class="choose--item">小户型</li>
+                        <li class="choose--item">普通住宅</li>
+                        <li class="choose--item">复式别墅</li>
+                        <li class="choose--item">局部装修</li>
+                        <li class="choose--item">其他</li>
+                    </ul>
+                </div>
+
+                <!-- 服务保障 -->
+                <div class="service-guarantee more">
+                    <p class="title">施工方式<span class="des"> (可多选)</span></p>
+                    <ul class="choose multiple">
+                        <li class="choose--item">先施工后付款</li>
+                        <li class="choose--item">延期赔</li>
+                        <li class="choose--item">免息分期</li>
+                        <li class="choose--item">土巴兔质检</li>
+                    </ul>
+                </div>
+
+                <!-- 预算 -->
+                <div class="budget more">
+                    <p class="title">预算<span class="des"> (可多选)</span></p>
+                    <ul class="choose multiple">
+                        <li class="choose--item">3万以下</li>
+                        <li class="choose--item">3-5万</li>
+                        <li class="choose--item">5-8万</li>
+                        <li class="choose--item">8-12万</li>
+                        <li class="choose--item">12-18万</li>
+                        <li class="choose--item">18-30万</li>
+                        <li class="choose--item">30-100万</li>
+                        <li class="choose--item">100万以上</li>
+                    </ul>
+                </div>
+
+                <!-- 按钮 -->
+                <div class="select-button">
+                    <button class="empty">清空</button>
+                    <button class="confirm">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 公司列表 -->
+        <div class="company__list">
+            <!-- 精选 -->
+            <div class="company__list--contents">
+                <p class="description">
+                    <span>精选商家</span>
+                    <span class="type">广告</span>
+                </p>
+                <ul>
+                    <li class="contents--item">
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- 更多商家 -->
+            <div class="company__list--contents">
+                <p class="description">
+                    <span>更多商家</span>
+                </p>
+                <ul>
+                    <li class="contents--item">
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+                
+                        <div>
+                            <div class="base-info">
+                                <img class="logo" src="../image/headphoto.jpg" alt="">
+                                <span class="name">佳美域装饰</span>
+                                <img class="tag" src="../image/red_coupon.png" alt="">
+                                <img class="tag" src="../image/yellow_coupon.png" alt="">
+                            </div>
+                            <p class="base-data">
+                                <span>案例：658</span>
+                                <em></em>
+                                <span>工地：143</span>
+                            </p>
+                            <div class="base-tag">
+                                <span>先施工后付款</span>
+                                <span>装修贷款</span>
+                            </div>
+                            <div class="company-case">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                                <img src="../image/case.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

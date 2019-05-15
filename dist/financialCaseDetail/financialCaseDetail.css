@@ -1,0 +1,60 @@
+.financial__header {
+  width: 100%;
+  height: 11.733vw;
+  line-height: 11.733vw;
+  background: #4A86DE;
+  font-family: PingFangSC-Regular;
+  font-size: 5.333vw;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+}
+.financial__header:before {
+  position: absolute;
+  display: block;
+  left: 6.133vw;
+  top: 50%;
+  transform: translateY(-50%);
+  content: " ";
+  width: 1.867vw;
+  height: 4vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../image/back.png);
+}
+.financial__footer {
+  border-top: 1px solid #eee;
+  overflow: hidden;
+}
+.financial__footer--des {
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #CCC;
+  padding-top: 4vw;
+}
+.financial__footer--btn {
+  display: block;
+  width: 89.333vw;
+  height: 10.933vw;
+  line-height: 10.933vw;
+  text-align: center;
+  margin: 8vw auto 10.667vw;
+  background: rgba(60, 122, 224, 0.6);
+  border-radius: 1.067vw;
+  font-family: PingFangSC-Regular;
+  font-size: 4.133vw;
+  color: #FFF;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+.head-area,
+.common-footer {
+  display: none !important;
+}
+.main {
+  padding-top: 0 !important;
+}
+.company-content {
+  padding-bottom: 0 !important;
+}

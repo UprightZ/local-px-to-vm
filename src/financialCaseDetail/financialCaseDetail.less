@@ -1,0 +1,75 @@
+// 金融案例
+.financial {
+    // 头部
+    &__header {
+        width: 100%;
+        height: 88px;
+        line-height: 88px;
+        background: #4A86DE;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 40px;
+        color: #FFF;
+        text-align: center;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            display:block;
+            left: 46px;
+            top:50%;
+            transform:translateY(-50%);
+            content: " ";
+            width: 14px;
+            height: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../image/back.png);
+        }
+    }
+
+    // 尾部
+    &__footer{
+        border-top: 1px solid #eee;
+        // BFC 让button撑开
+        overflow: hidden;
+
+        &--des {
+            font-family: PingFangSC-Regular;
+            font-size: 24px;    
+            color: #CCC;
+            padding-top: 30px;
+        }
+
+        &--btn {
+            display: block;
+            width: 670px;
+            height: 82px;
+            line-height: 82px;
+            text-align: center;
+            margin: 60px auto 80px;
+            background: rgba(60,122,224,0.60);
+            border-radius: 8px;
+            font-family: PingFangSC-Regular;
+            font-size: 31px;
+            color: #FFF;
+            padding: 0;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+// 隐藏头尾逻辑 用样式控制防止抖动
+.head-area,
+.common-footer {
+    display: none !important;
+}
+
+.main {
+    padding-top: 0 !important;
+}
+
+.company-content {
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,253 @@
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ellipsis-two {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.word-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* divider组件样式 */
+.divider {
+  font-family: PingFangSC-Regular;
+  font-size: 3.733vw;
+  color: #8E8E93;
+  display: table;
+  white-space: nowrap;
+  height: auto;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  padding: 1.333vw 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 50%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
+}
+.divider:before {
+  background-position: right 2.667vw top 50%;
+}
+.divider:after {
+  background-position: left 2.667vw top 50%;
+}
+.billboard__banner {
+  position: relative;
+  width: 100%;
+  height: 42.667vw;
+}
+.billboard__banner--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.billboard__banner--rule {
+  position: absolute;
+  top: 4.8vw;
+  right: 3.2vw;
+  width: 11.733vw;
+  height: 5.6vw;
+  line-height: 5.6vw;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 2.8vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #FFF;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.billboard__banner--des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.billboard__banner--des .divider__content {
+  font-family: PingFangSC-Regular;
+  font-size: 4vw;
+  color: #FFF;
+}
+.billboard__banner--des .banner__des--detail {
+  padding-top: 2.4vw;
+  font-family: PingFangSC-Semibold;
+  font-size: 6.133vw;
+  color: #FFFF;
+  white-space: nowrap;
+}
+.billboard__list {
+  padding: 4vw 3.2vw;
+}
+.billboard__list li:last-child .billboard__list--item {
+  margin-bottom: 0;
+}
+.billboard__list--item {
+  position: relative;
+  background: #FFF;
+  border-radius: 1.6vw;
+  display: flex;
+  align-items: center;
+  padding: 5.333vw 3.733vw 5.333vw 3.2vw;
+  margin-bottom: 3.733vw;
+}
+.billboard__list--item .rank {
+  width: 6.933vw;
+  margin-right: 3.2vw;
+}
+.billboard__list--item span.rank {
+  font-family: PingFangSC-Medium;
+  font-size: 6.4vw;
+  color: #FF8A00;
+  padding-left: 1.067vw;
+}
+.billboard__list--item .company__info {
+  display: flex;
+}
+.billboard__list--item .company__info--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.067vw;
+  height: 17.067vw;
+  border: 1px solid #E5E5E5;
+  margin-right: 2.133vw;
+}
+.billboard__list--item .company__info--logo img {
+  width: 8.533vw;
+  height: 8.533vw;
+}
+.billboard__list--item .company__info--detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.billboard__list--item .company__info--detail .company-des {
+  display: flex;
+  align-items: center;
+}
+.billboard__list--item .company__info--detail .company-des .name {
+  font-family: PingFangSC-Medium;
+  line-height: 5.867vw;
+  font-size: 4.267vw;
+  color: #222;
+  margin-right: 1.6vw;
+}
+.billboard__list--item .company__info--detail .company-des .tag {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1.6vw;
+}
+.billboard__list--item .company__info--detail .company-data {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #666;
+  line-height: 4.267vw;
+}
+.billboard__list--item .company__info--detail .company-data em {
+  display: inline-block;
+  width: 1px;
+  height: 2.133vw;
+  background: #E3E3E3;
+  margin: 0 1.6vw;
+}
+.billboard__list--item .company__info--detail .company-tag {
+  margin-top: 1.467vw;
+  display: flex;
+}
+.billboard__list--item .company__info--detail .company-tag span {
+  font-family: PingFangSC-Regular;
+  font-size: 2.4vw;
+  border-radius: 0.533vw;
+  line-height: 3.467vw;
+  padding: 0.4vw 1.067vw;
+  margin-right: 1.067vw;
+  color: #24C77E;
+  border: 1px solid rgba(36, 199, 126, 0.3);
+}
+.billboard__list--item .next {
+  width: 1.333vw;
+  height: 2.4vw;
+  position: absolute;
+  right: 3.733vw;
+}
+.billboard__layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.billboard__layer--detail {
+  width: 74.667vw;
+  height: 90.133vw;
+  padding: 6.667vw 5.333vw 9.333vw;
+  background: #FFF;
+  border-radius: 3.2vw;
+}
+.billboard__layer--detail .layer-title {
+  font-family: PingFangSC-Semibold;
+  font-size: 4.533vw;
+  line-height: 6.4vw;
+  color: #222;
+  text-align: center;
+  padding-bottom: 4.533vw;
+}
+.billboard__layer--detail .layer-info {
+  height: 63.2vw;
+  font-family: PingFangSC-Regular;
+  font-size: 4vw;
+  color: #222;
+  overflow-y: scroll;
+  white-space: pre-line;
+}
+.billboard__layer .close-icon {
+  display: block;
+  width: 7.467vw;
+  height: 7.467vw;
+  margin: 6.667vw auto 0;
+}
+.layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+}
