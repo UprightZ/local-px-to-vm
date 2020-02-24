@@ -1,0 +1,107 @@
+.common-toolbar {
+   
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 108px;
+    background-color: #fff;
+    z-index: 6;
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .toolbar__icon {
+            display: flex;
+            justify-content: center;
+
+            // 单独图标
+            &.single {
+                width: 210px;
+            }
+
+            &--item {
+                display: block;
+                width: 112px;
+                padding: 20px 0;
+                text-align: center;
+                z-index: 0;
+                position: relative;
+
+                &.toolbar__service {
+                    width: 80px;
+                }
+
+                i {
+                    display: block;
+                    margin: 0 auto 6px auto;
+                    width: 36px;
+                    height: 36px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &.phone {
+                        background-image: url('../image/common/phone.png');
+                    }
+
+                    &.service {
+                        background-image: url('../image/common/service.png');
+                    }
+                }
+
+                span {
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #111111;
+                    
+                }
+            }
+        }
+
+        .toolbar__btnbox {
+            width: 488px;
+            height: 80px;
+            border-radius: 40px;
+            overflow: hidden;
+            margin-left: 42px;
+            position: relative;
+
+            // 隐藏
+            &.single {
+                margin-left: 0;
+            }
+
+            .btn {
+                float: left;
+                width: 100%;
+                height: 100%;
+                line-height: 80px;
+                text-align: center;
+                font-size: 28px;
+                color: #fff;
+                font-family: PingFangSC-Medium;
+            }
+
+            .js-ordered__btn {
+                background-color: #FF8A00;
+            }
+
+            .js-price__btn {
+                background-color: #F56022;
+            }
+
+            .js-ordered__btn.big {
+                width: 100%;
+                float: none;
+                background-color: #FF8A00;
+            }
+        }
+
+
+        .common-toolbar+.main {
+            margin-bottom: 100px;
+        }
+    }
+
+}

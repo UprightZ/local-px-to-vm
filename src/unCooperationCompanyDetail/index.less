@@ -1,0 +1,229 @@
+@import "../style.less";
+@import "../star/star.css";
+
+.common-padding {
+    padding: 40px;
+    background: #fff;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #F2F3F7;
+}
+
+.icon-next {
+    display: inline-block;
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../image/companyDetail/path.png);
+    flex-shrink: 0;
+}
+
+.cell {
+    line-height: 50px;
+    font-family: PingFangSC-Semibold;
+    font-size: 36px;
+    color: #111;
+    font-weight: 600;
+}
+
+
+.company__detail {
+    // 公司信息
+    &--info {
+        background: #fff;
+
+        .company {
+            // 基本介绍
+            &__base {
+                .border-bottom;
+                display: flex;
+
+                &--logo {
+                    width: 160px;
+                    height: 160px;
+                    flex-shrink: 0;
+                }
+
+                &--info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 24px;
+
+                    .name {
+                        font-family: PingFangSC-Semibold;
+                        font-size: 36px;
+                        color: #222;
+                        line-height: 50px;
+                        font-weight: 600;
+                    }
+
+                    .tag-star i {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .label {
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        color: #5F6277;
+                        line-height: 34px;
+                    }
+                }
+            }
+
+            // 合作状态
+            &__status {
+                .flex-row-center;
+                padding: 28px 40px;
+                font-family: PingFangSC-Regular;
+                font-size: 28px;
+                color: #111;
+
+                .tag {
+                    width: 96px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background: #F5F7FA;
+                    border-radius: 4px;
+                    font-size: 24px;
+                    color: #878B99;
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+    
+    // 特色服务
+    &--service {
+        margin-top: 16px;
+
+        .service__list {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+
+            .service-component {
+                position: relative;
+                width: 324px;
+                height: 200px;
+                background: #F5F7FA;
+                border-radius: 4px;
+                padding: 28px 0 24px 32px;
+
+                .title {
+                    font-family: PingFangSC-Semibold;
+                    font-size: 30px;
+                    color: #111;
+                    line-height: 42px;
+                    font-weight: 600;
+                }
+
+                .des {
+                    font-family: PingFangSC-Regular;
+                    font-size: 24px;
+                    color: #878B99;
+                    line-height: 32px;
+                    padding-top: 8px;
+                }
+
+                .btn {
+                    width: 112px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;;
+                    background: #FF572A;
+                    border-radius: 20px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 20px;
+                    color: #FFF;
+                    margin-top: 24px;
+                }
+
+                .img {
+                    width: 104px;
+                    height: 80px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    // 广告
+    &--ad {
+        background: #fff;
+        width: 100%;
+        height: 160px;
+        padding: 12px 40px 20px 40px;
+    }
+
+    // 精选公司
+    &--fantastic {
+        .fantastic__list {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &--item {
+                margin: 0 22px 44px 0;
+
+                &:nth-child(even) {
+                    margin-right: 0;
+                    
+                }
+
+                .company-component {
+                    width: 324px;
+    
+                    .img {
+                        width: 100%;
+                        height: 324px;
+                        border-radius: 4px;
+                    }
+    
+                    .info {
+                        width: 100%;
+                        height: 182px;
+                        padding: 24px 0;
+    
+                        .name {
+                            font-family: PingFangSC-Semibold;
+                            font-size: 28px;            
+                            color: #111;
+                            line-height: 40px;
+                            padding-bottom: 10px;
+                        }
+
+                        .describe {
+                            .flex-row-center;
+
+                            .comment {
+                                margin-left: 20px;
+                                font-family: PingFangSC-Regular;
+                                font-size: 24px;
+                                color: #111;
+                            }
+                        }
+    
+                        .label {
+                            font-family: PingFangSC-Regular;
+                            font-size: 24px;
+                            color: #878B99;
+                            line-height: 34px;
+                            padding-top: 24px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

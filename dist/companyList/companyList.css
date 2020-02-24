@@ -13,6 +13,7 @@
 .word-wrap {
   overflow-wrap: break-word;
   word-wrap: break-word;
+  word-break: break-all;
 }
 .flex-center {
   display: flex;
@@ -51,6 +52,7 @@
   border: 0.267vw solid #34c083;
   padding: 0.533vw 0 0.533vw 2.667vw;
   outline: 0;
+  -webkit-appearance: none;
 }
 .search .form input::-webkit-input-placeholder {
   font-family: PingFangSC-Regular;
@@ -91,7 +93,7 @@
   margin-left: 1.867vw;
   position: relative;
   top: 0.267vw;
-  transition: transform .34s;
+  transition: transform 0.34s;
 }
 .filter-nav__list--item.active {
   font-family: PingFangSC-Medium;
@@ -142,7 +144,7 @@
   content: "";
   top: 4.8vw;
   right: 4.8vw;
-  background-image: url(../image/checked.png);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAMAAAA7+k+nAAAATlBMVEUAAAA+5Jgv344kyH8kyH4lyH8kyYAkyH4kyH8kyX8kyH4lyIAmx4Amx4AkyIAlyX4kyYAnzoAkyH4kyIAlx34myH4nyIElx4IpzIAkx370Edy+AAAAGXRSTlMABAeFrKSVubJhwJ6cjox0Vw3GfntrQTcy3BuyWAAAAHlJREFUGNNtj1kSgDAIQylVa9135f4XFXQqdoZ8wUvSDmDqimjynchbfCTb2JgvM7gYXcY982YGmIiKvzMwD/L1wUOpvOK1xi/SJt7R84CGqmdypdSFa6wXXrxllQQ9YC1VpSnqw1vMHQmb92IQvipQpyEawRJOZ7bfS48IWQ4ZgtQAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   background-size: contain;
 }

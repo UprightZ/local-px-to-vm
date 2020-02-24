@@ -1,4 +1,5 @@
 @import '../style.less';
+@import "../star/star.css";
 
 /* divider组件样式 */
 .divider {
@@ -33,6 +34,9 @@
     background-position: left 20px top 50%;
 }
 
+.main {
+    background: #FFF;
+}
 // 页面样式
 .billboard {
     // 顶部banner
@@ -86,121 +90,79 @@
         }
     }
 
-    &__list {
-        padding: 30px 24px;
+    &__other {
+        background: #FFF;
+        height: 120px;
+        overflow: hidden;
+        // margin-bottom: 32px;
 
-        li:last-child .billboard__list--item {
-            margin-bottom: 0;
-        }
-
-        &--item {
-            position: relative;
-            background: #FFF;
-            border-radius: 12px;
+        &--list {
             display: flex;
-            align-items: center;
-            padding: 40px 28px 40px 24px;
-            margin-bottom: 28px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding: 40px 0;
 
-            .rank {
-                width: 52px;
-                margin-right: 24px;
-            }
+            .list-item {
+                background: #F5F7FA;
+                flex-shrink: 0;
+                height: 80px;
+                line-height: 80px;
+                padding: 0 32px;
+                font-family: PingFangSC-Regular;
+                font-size: 28px;
+                color: #666666;
+                border-radius: 38px;
+                margin-left: 20px;
 
-            span.rank {
-                font-family: PingFangSC-Medium;
-                font-size: 48px;
-                color: #FF8A00;
-                padding-left: 8px;
-            }
-
-            .company__info {
-                display: flex;
-
-                &--logo {
-                    .flex-center;
-                    width: 128px;
-                    height: 128px;
-                    border: 1px solid #E5E5E5;
-                    margin-right: 16px;
-
-                    img {
-                        width: 64px;
-                        height: 64px;
-                    }
+                &.active {
+                    font-family: PingFangSC-Semibold;
+                    font-weight: bold;
+                    color: #111;
+                    
                 }
 
-                &--detail {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .company {
-                        &-des {
-                            display: flex;
-                            align-items: center;
-
-                            .name {
-                                font-family: PingFangSC-Medium;
-                                line-height: 44px;
-                                font-size: 32px;
-                                color: #222;
-                                margin-right: 12px;
-                            }
-
-                            .tag {
-                                width: 30px;
-                                height: 30px;
-                                margin-left: 12px;
-                            }
-                        }
-
-                        &-data {
-                            display: flex;
-                            align-items: center;
-                            margin-top: 6px;
-                            font-family: PingFangSC-Regular;
-                            font-size: 24px;
-                            color: #666;
-                            line-height: 32px;
-
-                            em {
-                                display: inline-block;
-                                width: 1px;
-                                height: 16px;
-                                background: #E3E3E3;
-                                margin: 0 12px;
-                            }
-                        }
-
-                        &-tag {
-                            margin-top: 11px;
-                            display: flex;
-
-                            span {
-                                font-family: PingFangSC-Regular;
-                                font-size: 18px;
-                                border-radius: 4px;
-                                line-height: 26px;
-                                padding: 3px 8px;
-                                margin-right: 8px;
-                                color: #24C77E;
-                                border: 1px solid rgba(36, 199, 126, 0.3);
-                            }
-                        }
-                        
-                    }
+                &:first-child {
+                    margin-left: 0;
                 }
             }
 
-            .next {
-                width: 10px;
-                height: 18px;
-                position: absolute;
-                right: 28px;
+            &::before,
+            &::after {
+                content: " ";
+                width: 32px;
+                flex-shrink: 0;
             }
-
         }
+    }
+
+    &__list {
+        background: #FFF;
+        margin-top: 32px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -1px;
+            right: 0;
+            left: 0;
+            height: 1px;
+            background-color: #EBECF5;
+            transform: scaleY(0.5);
+            -webkit-transform: scaleY(0.5);
+            -ms-transform: scaleY(0.5);
+            -o-transform: scaleY(0.5);
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+
+        // li:last-child .billboard__list--item {
+        //     margin-bottom: 0;
+        // }
     }
 
     &__layer {
@@ -245,6 +207,319 @@
             margin: 50px auto 0;
         }
         
+    }
+}
+
+.contents--item {
+    display: flex;
+    background: #FFF;
+    padding: 32px 0;
+    margin: 0 32px;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #EBECF5;
+        transform: scaleY(0.5);
+        -webkit-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+        -o-transform: scaleY(0.5);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    .company {
+
+        // 装企图片
+        &__logo {
+            position: relative;
+            flex-shrink: 0;
+            width: 164px;
+            height: 164px;
+
+            .logo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .rank {
+                width: 74px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+
+
+        // 基本信息
+        &__info {
+            flex: 1;
+            margin-left: 32px;
+
+            .info:last-child {
+                margin-bottom: 0;
+                // 新加的
+                padding-bottom: 0;
+            }
+
+            &.center {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 172px;
+                position: relative;
+                margin-top: 8px;
+                margin-bottom: 12px;
+
+                .company__info--top {
+                    // padding-top: 8px;
+                    // 没什么影响
+                    padding-bottom: 0;
+                }
+
+                .company__info--all {
+                    padding-bottom: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .company__info--tag {
+                    // margin-bottom: 12px;
+                }
+            }
+
+            // 标题
+            &--top {
+                .flex-row-center;
+                padding-bottom: 10px;
+
+                // 名称
+                .top-name {
+                    max-width: 400px;
+                    font-family: PingFangSC-Medium;
+                    font-size: 30px;
+                    color: #050508;
+                    line-height: 42px;
+                }
+
+                // 惠标签
+                .tag-icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 8px;
+
+                    &:first-of-type {
+                        margin-left: 16px;
+                    }
+                }
+
+            }
+
+            // 第二行
+            &--all {
+                .flex-row-center;
+                font-size: 24px;
+                line-height: 34px;
+                padding-bottom: 12px;
+
+                .hot-img {
+                    width: 148px;
+                    height: 36px;
+                }
+
+                // 星级
+                .tag-star {
+                    display: flex;
+                    font-family: PingFangSC-Regular;
+
+                    i {
+                        display: block;
+                        width: 28px;
+                        height: 28px;
+                        top: 0;
+                        margin-top: 0;
+                    }
+                }
+
+                // 星级
+                // 到时候用这个
+                // .tag-star {
+                //     i {
+                //         width: 28px;
+                //         height: 28px;
+                //     }
+                // }
+
+                // 评论数
+                .comment-count {
+                    color: #050508;
+                    padding-left: 16px;
+                }
+
+                // 设计案例
+                // 业主日记
+                .design-case,
+                .owner-diary {
+                    // color: #FF7243;
+                    color: #111;
+                }
+
+                .owner-diary {
+                    padding-left: 20px;
+                }
+
+                .num:nth-child(1) {
+                    padding-left: 0;
+                }
+            }
+
+            // 第三行
+            &--num {
+                display: flex;
+                line-height: 34px;
+                font-family: PingFangSC-Regular;
+                font-size: 24px;
+                color: #878B99;
+                padding-bottom: 16px;
+
+                // 近期签约
+                .recent-signing {
+                    padding-right: 20px;
+                }
+
+                // 均价
+                .average-price {
+                    // position: relative;
+                }
+
+                // 具体
+                .distance {
+                    margin-left: auto;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            // 保障标签和服务标签
+            &--tag {
+                @height: 36px;
+
+                display: flex;
+                flex-wrap: wrap;
+                height: @height;
+                overflow-y: hidden;
+                margin-bottom: 20px;
+                box-sizing: content-box;
+                position: relative;
+
+                .tag {
+                    position: relative;
+                    height: @height;
+                    line-height: @height;
+                    font-family: PingFangSC-Regular;
+                    font-size: 22px;
+                    color: #5F6277;
+                    padding: 0 8px;
+                    margin-right: 20px;
+                    background: #F5F7FA;
+                    border-radius: 6px;
+                }
+            }
+
+            // 线
+            &--line {
+                display: block;
+                height: 1px;
+                background: #EBECF5;
+                transform: scaleY(0.5);
+                -webkit-transform: scaleY(0.5);
+                -ms-transform: scaleY(0.5);
+                -o-transform: scaleY(0.5);
+                -webkit-transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                -o-transform-origin: 0 0;
+                transform-origin: 0 0;
+                margin-bottom: 16px;
+            }
+
+            // 榜单
+            &--rank {
+                @height: 36px;
+
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #FF5921;
+                background: #FFF0EC;
+                border-radius: 6px;
+                height: @height;
+                line-height: @height;
+                padding: 0 8px;
+                margin-bottom: 24px;
+                align-self: baseline;
+            }
+
+            // 最新日记
+            &--diary {
+                .flex-row-center;
+                width: 100%;
+
+                // 最新标签
+                .new {
+                    width: 58px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background: #FF6666;
+                    border-radius: 4px;
+                    font-family: PingFangSC-Medium;
+                    font-size: 20px;
+                    color: #FFF;
+                    margin-right: 16px;
+                }
+
+                // 日记名称
+                .title {
+                    max-width: 412px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 22px;
+                    color: #5F6277;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #EBECF5;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+        -o-transform: scaleY(0.5);
+        transform: scaleY(0.5);
     }
 }
 

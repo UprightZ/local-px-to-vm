@@ -1,3 +1,4 @@
+@import "../star/star.css";
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -62,6 +63,9 @@
 .divider:after {
   background-position: left 2.667vw top 50%;
 }
+.main {
+  background: #FFF;
+}
 .billboard__banner {
   position: relative;
   width: 100%;
@@ -108,103 +112,66 @@
   color: #FFFF;
   white-space: nowrap;
 }
-.billboard__list {
-  padding: 4vw 3.2vw;
-}
-.billboard__list li:last-child .billboard__list--item {
-  margin-bottom: 0;
-}
-.billboard__list--item {
-  position: relative;
+.billboard__other {
   background: #FFF;
-  border-radius: 1.6vw;
+  height: 16vw;
+  overflow: hidden;
+}
+.billboard__other--list {
   display: flex;
-  align-items: center;
-  padding: 5.333vw 3.733vw 5.333vw 3.2vw;
-  margin-bottom: 3.733vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 5.333vw 0;
 }
-.billboard__list--item .rank {
-  width: 6.933vw;
-  margin-right: 3.2vw;
-}
-.billboard__list--item span.rank {
-  font-family: PingFangSC-Medium;
-  font-size: 6.4vw;
-  color: #FF8A00;
-  padding-left: 1.067vw;
-}
-.billboard__list--item .company__info {
-  display: flex;
-}
-.billboard__list--item .company__info--logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 17.067vw;
-  height: 17.067vw;
-  border: 1px solid #E5E5E5;
-  margin-right: 2.133vw;
-}
-.billboard__list--item .company__info--logo img {
-  width: 8.533vw;
-  height: 8.533vw;
-}
-.billboard__list--item .company__info--detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.billboard__list--item .company__info--detail .company-des {
-  display: flex;
-  align-items: center;
-}
-.billboard__list--item .company__info--detail .company-des .name {
-  font-family: PingFangSC-Medium;
-  line-height: 5.867vw;
-  font-size: 4.267vw;
-  color: #222;
-  margin-right: 1.6vw;
-}
-.billboard__list--item .company__info--detail .company-des .tag {
-  width: 4vw;
-  height: 4vw;
-  margin-left: 1.6vw;
-}
-.billboard__list--item .company__info--detail .company-data {
-  display: flex;
-  align-items: center;
-  margin-top: 0.8vw;
+.billboard__other--list .list-item {
+  background: #F5F7FA;
+  flex-shrink: 0;
+  height: 10.667vw;
+  line-height: 10.667vw;
+  padding: 0 4.267vw;
   font-family: PingFangSC-Regular;
-  font-size: 3.2vw;
-  color: #666;
-  line-height: 4.267vw;
+  font-size: 3.733vw;
+  color: #666666;
+  border-radius: 5.067vw;
+  margin-left: 2.667vw;
 }
-.billboard__list--item .company__info--detail .company-data em {
-  display: inline-block;
-  width: 1px;
-  height: 2.133vw;
-  background: #E3E3E3;
-  margin: 0 1.6vw;
+.billboard__other--list .list-item.active {
+  font-family: PingFangSC-Semibold;
+  font-weight: bold;
+  color: #111;
 }
-.billboard__list--item .company__info--detail .company-tag {
-  margin-top: 1.467vw;
-  display: flex;
+.billboard__other--list .list-item:first-child {
+  margin-left: 0;
 }
-.billboard__list--item .company__info--detail .company-tag span {
-  font-family: PingFangSC-Regular;
-  font-size: 2.4vw;
-  border-radius: 0.533vw;
-  line-height: 3.467vw;
-  padding: 0.4vw 1.067vw;
-  margin-right: 1.067vw;
-  color: #24C77E;
-  border: 1px solid rgba(36, 199, 126, 0.3);
+.billboard__other--list::before,
+.billboard__other--list::after {
+  content: " ";
+  width: 4.267vw;
+  flex-shrink: 0;
 }
-.billboard__list--item .next {
-  width: 1.333vw;
-  height: 2.4vw;
+.billboard__list {
+  background: #FFF;
+  margin-top: 4.267vw;
+  position: relative;
+}
+.billboard__list::before {
+  content: '';
+  display: block;
   position: absolute;
-  right: 3.733vw;
+  top: -1px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 .billboard__layer {
   position: absolute;
@@ -240,6 +207,239 @@
   width: 7.467vw;
   height: 7.467vw;
   margin: 6.667vw auto 0;
+}
+.contents--item {
+  display: flex;
+  background: #FFF;
+  padding: 4.267vw 0;
+  margin: 0 4.267vw;
+  position: relative;
+}
+.contents--item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.contents--item .company__logo {
+  position: relative;
+  flex-shrink: 0;
+  width: 21.867vw;
+  height: 21.867vw;
+}
+.contents--item .company__logo .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contents--item .company__logo .rank {
+  width: 9.867vw;
+  height: 5.333vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.contents--item .company__info {
+  flex: 1;
+  margin-left: 4.267vw;
+}
+.contents--item .company__info .info:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contents--item .company__info.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22.933vw;
+  position: relative;
+  margin-top: 1.067vw;
+  margin-bottom: 1.6vw;
+}
+.contents--item .company__info.center .company__info--top {
+  padding-bottom: 0;
+}
+.contents--item .company__info.center .company__info--all {
+  padding-bottom: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contents--item .company__info--top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.333vw;
+}
+.contents--item .company__info--top .top-name {
+  max-width: 53.333vw;
+  font-family: PingFangSC-Medium;
+  font-size: 4vw;
+  color: #050508;
+  line-height: 5.6vw;
+}
+.contents--item .company__info--top .tag-icon {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1.067vw;
+}
+.contents--item .company__info--top .tag-icon:first-of-type {
+  margin-left: 2.133vw;
+}
+.contents--item .company__info--all {
+  display: flex;
+  align-items: center;
+  font-size: 3.2vw;
+  line-height: 4.533vw;
+  padding-bottom: 1.6vw;
+}
+.contents--item .company__info--all .hot-img {
+  width: 19.733vw;
+  height: 4.8vw;
+}
+.contents--item .company__info--all .tag-star {
+  display: flex;
+  font-family: PingFangSC-Regular;
+}
+.contents--item .company__info--all .tag-star i {
+  display: block;
+  width: 3.733vw;
+  height: 3.733vw;
+  top: 0;
+  margin-top: 0;
+}
+.contents--item .company__info--all .comment-count {
+  color: #050508;
+  padding-left: 2.133vw;
+}
+.contents--item .company__info--all .design-case,
+.contents--item .company__info--all .owner-diary {
+  color: #111;
+}
+.contents--item .company__info--all .owner-diary {
+  padding-left: 2.667vw;
+}
+.contents--item .company__info--all .num:nth-child(1) {
+  padding-left: 0;
+}
+.contents--item .company__info--num {
+  display: flex;
+  line-height: 4.533vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #878B99;
+  padding-bottom: 2.133vw;
+}
+.contents--item .company__info--num .recent-signing {
+  padding-right: 2.667vw;
+}
+.contents--item .company__info--num .distance {
+  margin-left: auto;
+  letter-spacing: 0.5px;
+}
+.contents--item .company__info--tag {
+  display: flex;
+  flex-wrap: wrap;
+  height: 4.8vw;
+  overflow-y: hidden;
+  margin-bottom: 2.667vw;
+  box-sizing: content-box;
+  position: relative;
+}
+.contents--item .company__info--tag .tag {
+  position: relative;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #5F6277;
+  padding: 0 1.067vw;
+  margin-right: 2.667vw;
+  background: #F5F7FA;
+  border-radius: 0.8vw;
+}
+.contents--item .company__info--line {
+  display: block;
+  height: 1px;
+  background: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-bottom: 2.133vw;
+}
+.contents--item .company__info--rank {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #FF5921;
+  background: #FFF0EC;
+  border-radius: 0.8vw;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  padding: 0 1.067vw;
+  margin-bottom: 3.2vw;
+  align-self: baseline;
+}
+.contents--item .company__info--diary {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.contents--item .company__info--diary .new {
+  width: 7.733vw;
+  height: 4vw;
+  line-height: 4vw;
+  text-align: center;
+  background: #FF6666;
+  border-radius: 0.533vw;
+  font-family: PingFangSC-Medium;
+  font-size: 2.667vw;
+  color: #FFF;
+  margin-right: 2.133vw;
+}
+.contents--item .company__info--diary .title {
+  max-width: 54.933vw;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #5F6277;
+  line-height: 4.267vw;
+}
+.contents--item::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EBECF5;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
 }
 .layer {
   display: none;

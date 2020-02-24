@@ -20,7 +20,7 @@
   height: 4vw;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../image/back.png);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAzCAMAAABR9YM8AAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMASPUKG+/g1szAs6SVhWNUOhRz6CQvLnRma804RwAAAKFJREFUOMvV1DkSwzAMA0DRlu/7TPD/j4YdG7BgKpvtjseSACn9MSIujYCHE1z7KA2cZqWe06LUlZSkAFpOq1KzUboqoM6UzgM4Tkq5Bqqb0tYAxUqpbJWEUwdgSXR6pZnToLS7qWDyUxk57c9IJfuppK91KvQd/x9fJ99f9FzsPKM5WH7R3K0vwZ7xfvJe8/twMbF7xOd+XWISfgft/fTnBxrTEODdXrwwAAAAAElFTkSuQmCC);
 }
 .financial__footer {
   border-top: 1px solid #eee;

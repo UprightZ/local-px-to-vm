@@ -1,0 +1,305 @@
+@import "../star/star.css";
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.contents--item {
+  display: flex;
+  background: #FFF;
+  padding: 32px;
+  position: relative;
+}
+.contents--item .company__logo {
+  position: relative;
+  flex-shrink: 0;
+  width: 192px;
+  height: 192px;
+}
+.contents--item .company__logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid #EBECF5;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contents--item .company__logo .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contents--item .company__logo .special-recommend {
+  width: 44px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.contents--item .company__info {
+  flex: 1;
+  margin-left: 20px;
+}
+.contents--item .company__info .info:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contents--item .company__info.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 172px;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.contents--item .company__info.center .company__info--top {
+  padding-bottom: 0;
+}
+.contents--item .company__info.center .company__info--all {
+  padding-bottom: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contents--item .company__info--top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.contents--item .company__info--top .top-name {
+  max-width: 370px;
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: #111;
+  line-height: 44px;
+}
+.contents--item .company__info--top .top-flag {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+}
+.contents--item .company__info--all {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 34px;
+  padding-bottom: 12px;
+}
+.contents--item .company__info--all .hot-img {
+  width: 148px;
+  height: 36px;
+}
+.contents--item .company__info--all .tag-star {
+  display: flex;
+  font-family: PingFangSC-Regular;
+}
+.contents--item .company__info--all .tag-star i {
+  display: block;
+  width: 28px;
+  height: 28px;
+  top: 0;
+  margin-top: 0;
+}
+.contents--item .company__info--all .comment-count {
+  color: #111;
+  padding-left: 8px;
+}
+.contents--item .company__info--all .design-case,
+.contents--item .company__info--all .owner-diary {
+  color: #111;
+}
+.contents--item .company__info--all .owner-diary {
+  padding-left: 20px;
+}
+.contents--item .company__info--all .num:nth-child(1) {
+  padding-left: 0;
+}
+.contents--item .company__info--all .top-chain {
+  width: 52px;
+  height: 30px;
+  margin-left: auto;
+}
+.contents--item .company__info--num {
+  display: flex;
+  line-height: 34px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+  padding-bottom: 16px;
+}
+.contents--item .company__info--num .recent-signing {
+  padding-right: 20px;
+}
+.contents--item .company__info--num .distance {
+  margin-left: auto;
+  letter-spacing: 0.5px;
+}
+.contents--item .company__info--tag {
+  display: flex;
+  flex-wrap: wrap;
+  height: 36px;
+  overflow-y: hidden;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  box-sizing: content-box;
+  position: relative;
+}
+.contents--item .company__info--tag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.contents--item .company__info--tag .tag {
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #878B99;
+  padding: 0 8px;
+  margin-right: 20px;
+  background: #F5F7FA;
+  border-radius: 6px;
+}
+.contents--item .company__info--line {
+  display: block;
+  height: 1px;
+  background: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-bottom: 16px;
+}
+.contents--item .company__info--rank {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #FF5921;
+  background: #FFF0EC;
+  border-radius: 6px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 8px;
+  margin-bottom: 24px;
+  align-self: baseline;
+}
+.contents--item .company__info--diary {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.contents--item .company__info--diary .new {
+  width: 58px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #FF6666;
+  border-radius: 4px;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #FFF;
+  margin-right: 16px;
+}
+.contents--item .company__info--diary .title {
+  max-width: 412px;
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #5F6277;
+  line-height: 32px;
+}
+.contents--item .company__info--flag .flag-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.contents--item .company__info--flag .flag-item:last-child {
+  padding-bottom: 0;
+}
+.contents--item .company__info--flag .flag-item .tag {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background: #FF7859;
+  opacity: 0.9;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #FFF;
+}
+.contents--item .company__info--flag .flag-item .title {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+  padding-left: 20px;
+  line-height: 34px;
+}
+.contents--item::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EBECF5;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.contents--item .base-data span.tag-star {
+  font-size: 0;
+}
+.company-info__des--title .num .tag-star span {
+  font-size: 14px;
+  margin-right: 0;
+}
+.recommend__item--info .num .tag-star span {
+  margin-right: 0;
+}

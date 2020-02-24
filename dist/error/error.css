@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-text-size-adjust: none;
+  height: 100%;
+}
+* {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+body {
+  font-family: 'Microsoft Yahei', 'Tahoma', 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.main .center .img {
+  margin: 0 auto;
+  display: block;
+}
+.main .center .tip {
+  color: #858899;
+  text-align: center;
+}
+@media (max-width: 1080px) {
+  .main .center {
+    margin-top: 51.467vw;
+  }
+  .main .center .img {
+    width: 53.333vw;
+    height: 47.333vw;
+  }
+  .main .center .tip {
+    padding-top: 8.667vw;
+    font-family: PingFangSC-Regular;
+    font-size: 4vw;
+    line-height: 5.6vw;
+  }
+}
+@media (min-width: 1080px) {
+  .main .center {
+    margin-top: 40vw;
+  }
+  .main .center .img {
+    width: 40vw;
+    height: 35.867vw;
+  }
+  .main .center .tip {
+    padding-top: 4.267vw;
+    font-family: SourceHanSansCN-Normal;
+    font-size: 2.133vw;
+    line-height: 3.2vw;
+  }
+}

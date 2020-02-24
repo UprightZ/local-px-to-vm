@@ -13,6 +13,7 @@
 .word-wrap {
   overflow-wrap: break-word;
   word-wrap: break-word;
+  word-break: break-all;
 }
 .flex-center {
   display: flex;
@@ -51,6 +52,7 @@
   border: 2px solid #34c083;
   padding: 4px 0 4px 20px;
   outline: 0;
+  -webkit-appearance: none;
 }
 .search .form input::-webkit-input-placeholder {
   font-family: PingFangSC-Regular;
@@ -91,7 +93,7 @@
   margin-left: 14px;
   position: relative;
   top: 2px;
-  transition: transform .34s;
+  transition: transform 0.34s;
 }
 .filter-nav__list--item.active {
   font-family: PingFangSC-Medium;

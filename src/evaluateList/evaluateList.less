@@ -1,0 +1,306 @@
+@import "../star/star.css";
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.ellipsis-two {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.evaluate__list {
+    background: #fff;
+
+    // 描述
+    &--des {
+        padding: 32px 40px 28px 40px;
+        border-radius: 8px;
+        
+        .des {
+            &__content {
+                .flex-space-between-center;
+                padding: 0 28px;
+                background: #F5F7FA;
+                height: 156px;
+
+                // 好评率
+                &--rate {
+                    .rate {
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 56px;
+                        line-height: 80px;
+                        color: #24C77E;
+
+                        // 百分比
+                        .percentage {
+                            font-size: 36px;
+                            line-height: 1;
+                        }
+                    }
+
+                    .label {
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        color: #878B99;
+                    }
+                }
+
+                // 分数
+                &--num {
+                    display: flex;
+
+                    .item {
+                        margin-right: 48px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        .num {
+                            font-family: PingFangSC-Semibold;
+                            font-size: 32px;
+                            color: #1F212E;
+                            line-height: 44px;
+                        }
+
+                        .label {
+                            font-family: PingFangSC-Regular;
+                            font-size: 24px;
+                            color: #878B99;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__filter {
+        padding: 32px 40px 8px 40px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .filter--item {
+            height: 54px;
+            line-height: 54px;
+            padding: 0 32px;
+            background: #F5F7FA;
+            border-radius: 27px;
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #111;
+            margin: 0 16px 24px 0;
+
+            &.active {
+                background: rgba(1, 170, 100, 0.13);
+                color: #01AA64;
+            }
+        }
+    }
+
+    &--content {
+        padding: 0 40px;
+
+        .list--item {
+            border-bottom: 1px solid #F2F3F7;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            // 组件内容
+            .evaluate-component {
+                display: flex;
+                padding: 32px 0;
+                position: relative;
+
+                // 精选
+                .wonderful {
+                    width: 140px;
+                    height: 140px;
+                    position: absolute;
+                    top: 40px;
+                    right: 0;
+                }
+
+                .logo {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    margin-right: 16px;
+                }
+
+                .content {
+                    flex: 1;
+
+                    // 第一行
+                    &-line {
+                        .flex-row-center;
+                        padding-bottom: 6px;
+
+                        .name {
+                            font-family: PingFangSC-Medium;
+                            font-size: 28px;
+                            color: #111;
+                            line-height: 40px;
+                        }
+
+                        .icon {
+                            width: 110px;
+                            height: 28px;
+                            margin-left: 12px;
+                        }
+
+                        .time {
+                            font-family: PingFangSC-Regular;
+                            font-size: 22px;
+                            color: #878B99;
+                            line-height: 32px;
+                            margin-left: auto;
+                        }
+                    }
+
+                    // 评分
+                    .evaluate-grade {
+                        padding-top: 8px;
+
+                        .grade-item {
+                            font-family: PingFangSC-Regular;
+                            font-size: 22px;
+                            color: #878B99;
+                            line-height: 32px;
+                            padding-right: 26px;
+
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+
+                    // 评价内容详情
+                    .evaluate-detail {
+                        font-family: PingFangSC-Regular;
+                        font-size: 28px;
+                        color: #111;
+                        line-height: 48px;
+                        padding-top: 32px;
+                        // padding-bottom: 24px;
+                    }
+
+                    // 评价图片
+                    .evaluate-img {
+                        display: flex;
+                        // justify-content: space-between;
+                        padding-top: 20px;
+
+                        .img-item {
+                            width: 184px;
+                            height: 184px;
+                            border-radius: 6px;
+                            margin-right: 16px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    // 描述
+                    .evaluate-des {
+                        .flex-row-center;
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        line-height: 34px;
+                        color: #878B99;
+                        padding-top: 32px;
+
+                        .line {
+                            width: 1px;
+                            height: 20px;
+                            margin: 0 12px;
+                            background: #F2F3F7;
+
+                            &:last-of-type {
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                    // 追评
+                    .evaluate-review,
+                    .evaluate-reply {
+                        margin-top: 24px;
+                        padding-top: 24px;
+                        border-top: 1px solid #F2F3F7;
+
+                        .top {
+                            .flex-space-between-center;
+
+                            .label {
+                                font-family: PingFangSC-Medium;
+                                font-size: 28px;
+                                color: #24C77E;
+                                line-height: 40px;
+                            }
+    
+                            .time {
+                                font-family: PingFangSC-Regular;
+                                font-size: 22px;
+                                color: #777;
+                                line-height: 32px;
+                            }
+                        }
+
+                        // 内容
+                        .content {
+                            padding-top: 14px;
+                            font-family: PingFangSC-Regular;
+                            font-size: 28px;
+                            color: #111;
+                            line-height: 48px;
+                        }
+                    }
+
+                    // 回复
+                    .evaluate-reply {
+                        .top {
+                            .label {
+                                color: #111;
+                            }
+                        }
+                        // 内容
+                        .content {
+                            color: #777;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

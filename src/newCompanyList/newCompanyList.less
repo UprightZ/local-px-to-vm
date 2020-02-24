@@ -1,0 +1,423 @@
+@import "../star/star.css";
+
+// 装企列表的样式
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.contents--item {
+    display: flex;
+    background: #FFF;
+    padding: 32px;
+    position: relative;
+
+    .company {
+
+        // 装企图片
+        &__logo {
+            position: relative;
+            flex-shrink: 0;
+            width: 192px;
+            height: 192px;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                border: 1px solid #EBECF5;
+                top: 0;
+                left: 0;
+                width: 200%;
+                height: 200%;
+                -webkit-transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                -o-transform-origin: 0 0;
+                transform-origin: 0 0;
+                -webkit-transform: scale(0.5, 0.5);
+                -ms-transform: scale(0.5, 0.5);
+                -o-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5);
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .logo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            // 广告标识
+            .special-recommend {
+                width: 44px;
+                height: 22px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+
+
+        // 基本信息
+        &__info {
+            flex: 1;
+            margin-left: 20px;
+
+            .info:last-child {
+                margin-bottom: 0;
+                // 新加的
+                padding-bottom: 0;
+            }
+
+            &.center {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 172px;
+                position: relative;
+                margin-top: 8px;
+                margin-bottom: 12px;
+
+                .company__info--top {
+                    // padding-top: 8px;
+                    // 没什么影响
+                    padding-bottom: 0;
+                }
+
+                .company__info--all {
+                    padding-bottom: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .company__info--tag {
+                    // margin-bottom: 12px;
+                }
+            }
+
+            // 标题
+            &--top {
+                .flex-row-center;
+                padding-bottom: 10px;
+
+                // 名称
+                .top-name {
+                    max-width: 370px;
+                    font-family: PingFangSC-Medium;
+                    font-size: 32px;
+                    color: #111;
+                    line-height: 44px;
+                }
+
+                // 惠标签
+                .top-flag {
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 8px;
+                }
+                
+            }
+
+            // 第二行
+            &--all {
+                .flex-row-center;
+                font-size: 24px;
+                line-height: 34px;
+                padding-bottom: 12px;
+
+                .hot-img {
+                    width: 148px;
+                    height: 36px;
+                }
+
+                // 星级
+                .tag-star {
+                    display: flex;
+                    font-family: PingFangSC-Regular;
+
+                    i {
+                        display: block;
+                        width: 28px;
+                        height: 28px;
+                        top: 0;
+                        margin-top: 0;
+                    }
+                }
+
+                // 星级
+                // 到时候用这个
+                // .tag-star {
+                //     i {
+                //         width: 28px;
+                //         height: 28px;
+                //     }
+                // }
+
+                // 评论数
+                .comment-count {
+                    color: #111;
+                    padding-left: 8px;
+                }
+
+                // 设计案例
+                // 业主日记
+                .design-case,
+                .owner-diary {
+                    // color: #FF7243;
+                    color: #111;
+                }
+
+                .owner-diary {
+                    padding-left: 20px;
+                }
+
+                .num:nth-child(1) {
+                    padding-left: 0;
+                }
+
+                // 连锁
+                .top-chain {
+                    width: 52px;
+                    height: 30px;
+                    margin-left: auto;
+                }
+            }
+
+            // 第三行
+            &--num {
+                display: flex;
+                line-height: 34px;
+                font-family: PingFangSC-Regular;
+                font-size: 24px;
+                color: #878B99;
+                padding-bottom: 16px;
+
+                // 近期签约
+                .recent-signing {
+                    padding-right: 20px;
+                }
+
+                // 均价
+                .average-price {
+                    // position: relative;
+                }
+                
+                // 具体
+                .distance {
+                    margin-left: auto;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            // 保障标签和服务标签
+            &--tag {
+                @height: 36px;
+
+                display: flex;
+                flex-wrap: wrap;
+                height: @height;
+                overflow-y: hidden;
+                margin-bottom: 16px;
+                padding-bottom: 20px;
+                box-sizing: content-box;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    height: 1px;
+                    background-color: #EBECF5;
+                    transform: scaleY(0.5);
+                    -webkit-transform: scaleY(0.5);
+                    -ms-transform: scaleY(0.5);
+                    -o-transform: scaleY(0.5);
+                    -webkit-transform-origin: 0 0;
+                    -moz-transform-origin: 0 0;
+                    -ms-transform-origin: 0 0;
+                    -o-transform-origin: 0 0;
+                    transform-origin: 0 0;
+                }
+
+                .tag {
+                    position: relative;
+                    height: @height;
+                    line-height: @height;
+                    font-family: PingFangSC-Regular;
+                    font-size: 22px;
+                    color: #878B99;
+                    padding: 0 8px;
+                    margin-right: 20px;
+                    background: #F5F7FA;
+                    border-radius: 6px;
+
+                    // &::after {
+                    //     content: '';
+                    //     border-radius: 6px;
+                    //     display: block;
+                    //     position: absolute;
+                    //     border: 1px solid rgba(135, 139, 153, 0.5);
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 200%;
+                    //     height: 200%;
+                    //     -webkit-transform-origin: 0 0;
+                    //     -moz-transform-origin: 0 0;
+                    //     -ms-transform-origin: 0 0;
+                    //     -o-transform-origin: 0 0;
+                    //     transform-origin: 0 0;
+                    //     -webkit-transform: scale(0.5, 0.5);
+                    //     -ms-transform: scale(0.5, 0.5);
+                    //     -o-transform: scale(0.5, 0.5);
+                    //     transform: scale(0.5, 0.5);
+                    //     -webkit-box-sizing: border-box;
+                    //     -moz-box-sizing: border-box;
+                    //     box-sizing: border-box;
+                    // }
+                }
+            }
+
+            // 线
+            &--line {
+                display: block;
+                height: 1px;
+                background: #EBECF5;
+                transform: scaleY(0.5);
+                -webkit-transform: scaleY(0.5);
+                -ms-transform: scaleY(0.5);
+                -o-transform: scaleY(0.5);
+                -webkit-transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                -o-transform-origin: 0 0;
+                transform-origin: 0 0;
+                margin-bottom: 16px;
+            }
+
+            // 榜单
+            &--rank {
+                @height: 36px;
+
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #FF5921;
+                background: #FFF0EC;
+                border-radius: 6px;
+                height: @height;
+                line-height: @height;
+                padding: 0 8px;
+                margin-bottom: 24px;
+                align-self: baseline;
+            }
+
+            // 最新日记
+            &--diary {
+                .flex-row-center;
+                width: 100%;
+
+                // 最新标签
+                .new {
+                    width: 58px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background: #FF6666;
+                    border-radius: 4px;
+                    font-family: PingFangSC-Medium;
+                    font-size: 20px;
+                    color: #FFF;
+                    margin-right: 16px;
+                }
+
+                // 日记名称
+                .title {
+                    max-width: 412px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 22px;
+                    color: #5F6277;
+                    line-height: 32px;
+                }
+            }
+
+            &--flag {
+                .flag-item {
+                    .flex-row-center;
+                    padding-bottom: 16px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    .tag {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 4px;
+                        background: #FF7859;
+                        opacity: 0.9;
+                        font-family: PingFangSC-Regular;
+                        font-size: 20px;
+                        color: #FFF;
+                    }
+
+                    .title {
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        color: #878B99;
+                        padding-left: 20px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #EBECF5;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+        -o-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+// 口碑
+.contents--item .base-data span.tag-star{
+    font-size:0;
+}
+.company-info__des--title .num .tag-star span{
+   font-size:14px;
+   margin-right:0;
+}
+
+.recommend__item--info .num .tag-star span{
+   margin-right:0;
+}

@@ -1,0 +1,85 @@
+.common-toolbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 108px;
+  background-color: #fff;
+  z-index: 6;
+}
+.common-toolbar .toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common-toolbar .toolbar .toolbar__icon {
+  display: flex;
+  justify-content: center;
+}
+.common-toolbar .toolbar .toolbar__icon.single {
+  width: 210px;
+}
+.common-toolbar .toolbar .toolbar__icon--item {
+  display: block;
+  width: 112px;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+}
+.common-toolbar .toolbar .toolbar__icon--item.toolbar__service {
+  width: 80px;
+}
+.common-toolbar .toolbar .toolbar__icon--item i {
+  display: block;
+  margin: 0 auto 6px auto;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.common-toolbar .toolbar .toolbar__icon--item i.phone {
+  background-image: url('../image/common/phone.png');
+}
+.common-toolbar .toolbar .toolbar__icon--item i.service {
+  background-image: url('../image/common/service.png');
+}
+.common-toolbar .toolbar .toolbar__icon--item span {
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+}
+.common-toolbar .toolbar .toolbar__btnbox {
+  width: 488px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-left: 42px;
+  position: relative;
+}
+.common-toolbar .toolbar .toolbar__btnbox.single {
+  margin-left: 0;
+}
+.common-toolbar .toolbar .toolbar__btnbox .btn {
+  float: left;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  font-family: PingFangSC-Medium;
+}
+.common-toolbar .toolbar .toolbar__btnbox .js-ordered__btn {
+  background-color: #FF8A00;
+}
+.common-toolbar .toolbar .toolbar__btnbox .js-price__btn {
+  background-color: #F56022;
+}
+.common-toolbar .toolbar .toolbar__btnbox .js-ordered__btn.big {
+  width: 100%;
+  float: none;
+  background-color: #FF8A00;
+}
+.common-toolbar .toolbar .common-toolbar + .main {
+  margin-bottom: 100px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹窗</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+
+<body>
+    <div class="layer layer__mask" style="z-index: 31; background-color: rgba(0, 0, 0, 0.5);">
+        <div class="common-toolbar__popup" data-type="coupon">
+            <span class="toolbar-popup__close"></span>
+            <p class="toolbar-popup__header">土巴兔用户专享优惠</p>
+            <div class="toolbar-pop__box">
+               <div class="ticket">
+                   <div class="ticket__title">满减券</div>
+                   <div class="ticket__content">
+                       <div class="ticket__content--detail">交10000抵1000</div>
+                       <div class="ticket__content--time">2019.06.13 - 2019.06.30</div>
+                       <div class="ticket__content--person">800人</div>
+                   </div>
+               </div>
+               <div class="amount-room">
+                   <div class="amount-room__title">限时免费量房</div>
+                    <div class="amount-room__content">由公司专业的设计师现场量房，严格按照行业标准进行精确测量，并出具权威的量房报告作为装修参考</div>
+               </div>
+            </div>
+
+            <div class="toolbar-popup__form">
+                <div class="toolbar-popup__prompt">
+                    稍后装修公司将会电话联系你，沟通具体的装修服务流程。
+                </div>
+                <div class="toolbar-popup__ele error">
+                    <input type="tel" class="toolbar-popup__tel" placeholder="请输入你的手机号码用于接收通知" maxlength="11">
+                    <div class="toolbar-popup__code">
+                         <input type="text" class="code__content" placeholder="请输入验证码" maxlength="11">
+                         <div class="code__send">发送验证码</div>
+                         <div class="code__countdown">50S</div>
+                    </div>
+                </div>
+                <p class="toolbar-popup__error">号码格式有误，请检查</p>
+            </div>
+            <button disabled="" class="toolbar-popup__submit" tracker-widget="" data-widget_uid="popup_coupon_btn"
+                data-cmp_type="cmp" data-cmp_id="11062226">发送优惠券到手机</button>
+            <div class="toolbar-popup__agreement">
+                <div class="checkbox active">
+                    <i class="base-box"></i>
+                    <i class="agree-box"></i>
+                </div>
+                <p class="des">我已阅读并同意<a href="https://mapp.to8to.com/about/artical/detail/32"
+                        class="service-notes">《服务须知》</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

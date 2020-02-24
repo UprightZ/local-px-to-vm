@@ -1,0 +1,245 @@
+@import "../star/star.css";
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ellipsis-two {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.evaluate__list {
+  background: #fff;
+}
+.evaluate__list--des {
+  padding: 4.267vw 5.333vw 3.733vw 5.333vw;
+  border-radius: 1.067vw;
+}
+.evaluate__list--des .des__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.733vw;
+  background: #F5F7FA;
+  height: 20.8vw;
+}
+.evaluate__list--des .des__content--rate .rate {
+  display: flex;
+  align-items: baseline;
+  font-size: 7.467vw;
+  line-height: 10.667vw;
+  color: #24C77E;
+}
+.evaluate__list--des .des__content--rate .rate .percentage {
+  font-size: 4.8vw;
+  line-height: 1;
+}
+.evaluate__list--des .des__content--rate .label {
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #878B99;
+}
+.evaluate__list--des .des__content--num {
+  display: flex;
+}
+.evaluate__list--des .des__content--num .item {
+  margin-right: 6.4vw;
+}
+.evaluate__list--des .des__content--num .item:last-child {
+  margin-right: 0;
+}
+.evaluate__list--des .des__content--num .item .num {
+  font-family: PingFangSC-Semibold;
+  font-size: 4.267vw;
+  color: #1F212E;
+  line-height: 5.867vw;
+}
+.evaluate__list--des .des__content--num .item .label {
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #878B99;
+  line-height: 4.533vw;
+}
+.evaluate__list__filter {
+  padding: 4.267vw 5.333vw 1.067vw 5.333vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.evaluate__list__filter .filter--item {
+  height: 7.2vw;
+  line-height: 7.2vw;
+  padding: 0 4.267vw;
+  background: #F5F7FA;
+  border-radius: 3.6vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #111;
+  margin: 0 2.133vw 3.2vw 0;
+}
+.evaluate__list__filter .filter--item.active {
+  background: rgba(1, 170, 100, 0.13);
+  color: #01AA64;
+}
+.evaluate__list--content {
+  padding: 0 5.333vw;
+}
+.evaluate__list--content .list--item {
+  border-bottom: 1px solid #F2F3F7;
+}
+.evaluate__list--content .list--item:last-child {
+  border-bottom: none;
+}
+.evaluate__list--content .list--item .evaluate-component {
+  display: flex;
+  padding: 4.267vw 0;
+  position: relative;
+}
+.evaluate__list--content .list--item .evaluate-component .wonderful {
+  width: 18.667vw;
+  height: 18.667vw;
+  position: absolute;
+  top: 5.333vw;
+  right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .logo {
+  width: 9.6vw;
+  height: 9.6vw;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 2.133vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content {
+  flex: 1;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.8vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .name {
+  font-family: PingFangSC-Medium;
+  font-size: 3.733vw;
+  color: #111;
+  line-height: 5.333vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .icon {
+  width: 14.667vw;
+  height: 3.733vw;
+  margin-left: 1.6vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .time {
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #878B99;
+  line-height: 4.267vw;
+  margin-left: auto;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade {
+  padding-top: 1.067vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade .grade-item {
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #878B99;
+  line-height: 4.267vw;
+  padding-right: 3.467vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade .grade-item:last-child {
+  padding-right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-detail {
+  font-family: PingFangSC-Regular;
+  font-size: 3.733vw;
+  color: #111;
+  line-height: 6.4vw;
+  padding-top: 4.267vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img {
+  display: flex;
+  padding-top: 2.667vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img .img-item {
+  width: 24.533vw;
+  height: 24.533vw;
+  border-radius: 0.8vw;
+  margin-right: 2.133vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img .img-item:last-child {
+  margin-right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des {
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  line-height: 4.533vw;
+  color: #878B99;
+  padding-top: 4.267vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des .line {
+  width: 1px;
+  height: 2.667vw;
+  margin: 0 1.6vw;
+  background: #F2F3F7;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des .line:last-of-type {
+  display: none;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply {
+  margin-top: 3.2vw;
+  padding-top: 3.2vw;
+  border-top: 1px solid #F2F3F7;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top .label,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .label {
+  font-family: PingFangSC-Medium;
+  font-size: 3.733vw;
+  color: #24C77E;
+  line-height: 5.333vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top .time,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .time {
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #777;
+  line-height: 4.267vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .content,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .content {
+  padding-top: 1.867vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.733vw;
+  color: #111;
+  line-height: 6.4vw;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .label {
+  color: #111;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .content {
+  color: #777;
+}

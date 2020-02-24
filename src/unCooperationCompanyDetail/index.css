@@ -1,0 +1,219 @@
+@import "../star/star.css";
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ellipsis-two {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.word-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.common-padding {
+  padding: 40px;
+  background: #fff;
+}
+.border-bottom {
+  border-bottom: 1px solid #F2F3F7;
+}
+.icon-next {
+  display: inline-block;
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../image/companyDetail/path.png);
+  flex-shrink: 0;
+}
+.cell {
+  line-height: 50px;
+  font-family: PingFangSC-Semibold;
+  font-size: 36px;
+  color: #111;
+  font-weight: 600;
+}
+.company__detail--info {
+  background: #fff;
+}
+.company__detail--info .company__base {
+  border-bottom: 1px solid #F2F3F7;
+  display: flex;
+}
+.company__detail--info .company__base--logo {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+.company__detail--info .company__base--info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.company__detail--info .company__base--info .name {
+  font-family: PingFangSC-Semibold;
+  font-size: 36px;
+  color: #222;
+  line-height: 50px;
+  font-weight: 600;
+}
+.company__detail--info .company__base--info .tag-star i {
+  width: 32px;
+  height: 32px;
+}
+.company__detail--info .company__base--info .label {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #5F6277;
+  line-height: 34px;
+}
+.company__detail--info .company__status {
+  display: flex;
+  align-items: center;
+  padding: 28px 40px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #111;
+}
+.company__detail--info .company__status .tag {
+  width: 96px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #F5F7FA;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #878B99;
+  margin-right: 24px;
+}
+.company__detail--service {
+  margin-top: 16px;
+}
+.company__detail--service .service__list {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.company__detail--service .service__list .service-component {
+  position: relative;
+  width: 324px;
+  height: 200px;
+  background: #F5F7FA;
+  border-radius: 4px;
+  padding: 28px 0 24px 32px;
+}
+.company__detail--service .service__list .service-component .title {
+  font-family: PingFangSC-Semibold;
+  font-size: 30px;
+  color: #111;
+  line-height: 42px;
+  font-weight: 600;
+}
+.company__detail--service .service__list .service-component .des {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+  line-height: 32px;
+  padding-top: 8px;
+}
+.company__detail--service .service__list .service-component .btn {
+  width: 112px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #FF572A;
+  border-radius: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #FFF;
+  margin-top: 24px;
+}
+.company__detail--service .service__list .service-component .img {
+  width: 104px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.company__detail--ad {
+  background: #fff;
+  width: 100%;
+  height: 160px;
+  padding: 12px 40px 20px 40px;
+}
+.company__detail--fantastic .fantastic__list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company__detail--fantastic .fantastic__list--item {
+  margin: 0 22px 44px 0;
+}
+.company__detail--fantastic .fantastic__list--item:nth-child(even) {
+  margin-right: 0;
+}
+.company__detail--fantastic .fantastic__list--item .company-component {
+  width: 324px;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .img {
+  width: 100%;
+  height: 324px;
+  border-radius: 4px;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .info {
+  width: 100%;
+  height: 182px;
+  padding: 24px 0;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .info .name {
+  font-family: PingFangSC-Semibold;
+  font-size: 28px;
+  color: #111;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .info .describe {
+  display: flex;
+  align-items: center;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .info .describe .comment {
+  margin-left: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #111;
+}
+.company__detail--fantastic .fantastic__list--item .company-component .info .label {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+  line-height: 34px;
+  padding-top: 24px;
+}

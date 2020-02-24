@@ -1,0 +1,305 @@
+@import "../star/star.css";
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.contents--item {
+  display: flex;
+  background: #FFF;
+  padding: 4.267vw;
+  position: relative;
+}
+.contents--item .company__logo {
+  position: relative;
+  flex-shrink: 0;
+  width: 25.6vw;
+  height: 25.6vw;
+}
+.contents--item .company__logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid #EBECF5;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contents--item .company__logo .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contents--item .company__logo .special-recommend {
+  width: 5.867vw;
+  height: 2.933vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.contents--item .company__info {
+  flex: 1;
+  margin-left: 2.667vw;
+}
+.contents--item .company__info .info:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contents--item .company__info.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22.933vw;
+  position: relative;
+  margin-top: 1.067vw;
+  margin-bottom: 1.6vw;
+}
+.contents--item .company__info.center .company__info--top {
+  padding-bottom: 0;
+}
+.contents--item .company__info.center .company__info--all {
+  padding-bottom: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contents--item .company__info--top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.333vw;
+}
+.contents--item .company__info--top .top-name {
+  max-width: 49.333vw;
+  font-family: PingFangSC-Medium;
+  font-size: 4.267vw;
+  color: #111;
+  line-height: 5.867vw;
+}
+.contents--item .company__info--top .top-flag {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1.067vw;
+}
+.contents--item .company__info--all {
+  display: flex;
+  align-items: center;
+  font-size: 3.2vw;
+  line-height: 4.533vw;
+  padding-bottom: 1.6vw;
+}
+.contents--item .company__info--all .hot-img {
+  width: 19.733vw;
+  height: 4.8vw;
+}
+.contents--item .company__info--all .tag-star {
+  display: flex;
+  font-family: PingFangSC-Regular;
+}
+.contents--item .company__info--all .tag-star i {
+  display: block;
+  width: 3.733vw;
+  height: 3.733vw;
+  top: 0;
+  margin-top: 0;
+}
+.contents--item .company__info--all .comment-count {
+  color: #111;
+  padding-left: 1.067vw;
+}
+.contents--item .company__info--all .design-case,
+.contents--item .company__info--all .owner-diary {
+  color: #111;
+}
+.contents--item .company__info--all .owner-diary {
+  padding-left: 2.667vw;
+}
+.contents--item .company__info--all .num:nth-child(1) {
+  padding-left: 0;
+}
+.contents--item .company__info--all .top-chain {
+  width: 6.933vw;
+  height: 4vw;
+  margin-left: auto;
+}
+.contents--item .company__info--num {
+  display: flex;
+  line-height: 4.533vw;
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #878B99;
+  padding-bottom: 2.133vw;
+}
+.contents--item .company__info--num .recent-signing {
+  padding-right: 2.667vw;
+}
+.contents--item .company__info--num .distance {
+  margin-left: auto;
+  letter-spacing: 0.5px;
+}
+.contents--item .company__info--tag {
+  display: flex;
+  flex-wrap: wrap;
+  height: 4.8vw;
+  overflow-y: hidden;
+  margin-bottom: 2.133vw;
+  padding-bottom: 2.667vw;
+  box-sizing: content-box;
+  position: relative;
+}
+.contents--item .company__info--tag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.contents--item .company__info--tag .tag {
+  position: relative;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #878B99;
+  padding: 0 1.067vw;
+  margin-right: 2.667vw;
+  background: #F5F7FA;
+  border-radius: 0.8vw;
+}
+.contents--item .company__info--line {
+  display: block;
+  height: 1px;
+  background: #EBECF5;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-bottom: 2.133vw;
+}
+.contents--item .company__info--rank {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #FF5921;
+  background: #FFF0EC;
+  border-radius: 0.8vw;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  padding: 0 1.067vw;
+  margin-bottom: 3.2vw;
+  align-self: baseline;
+}
+.contents--item .company__info--diary {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.contents--item .company__info--diary .new {
+  width: 7.733vw;
+  height: 4vw;
+  line-height: 4vw;
+  text-align: center;
+  background: #FF6666;
+  border-radius: 0.533vw;
+  font-family: PingFangSC-Medium;
+  font-size: 2.667vw;
+  color: #FFF;
+  margin-right: 2.133vw;
+}
+.contents--item .company__info--diary .title {
+  max-width: 54.933vw;
+  font-family: PingFangSC-Regular;
+  font-size: 2.933vw;
+  color: #5F6277;
+  line-height: 4.267vw;
+}
+.contents--item .company__info--flag .flag-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.133vw;
+}
+.contents--item .company__info--flag .flag-item:last-child {
+  padding-bottom: 0;
+}
+.contents--item .company__info--flag .flag-item .tag {
+  width: 4vw;
+  height: 4vw;
+  line-height: 4vw;
+  text-align: center;
+  border-radius: 0.533vw;
+  background: #FF7859;
+  opacity: 0.9;
+  font-family: PingFangSC-Regular;
+  font-size: 2.667vw;
+  color: #FFF;
+}
+.contents--item .company__info--flag .flag-item .title {
+  font-family: PingFangSC-Regular;
+  font-size: 3.2vw;
+  color: #878B99;
+  padding-left: 2.667vw;
+  line-height: 4.533vw;
+}
+.contents--item::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EBECF5;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.contents--item .base-data span.tag-star {
+  font-size: 0;
+}
+.company-info__des--title .num .tag-star span {
+  font-size: 1.867vw;
+  margin-right: 0;
+}
+.recommend__item--info .num .tag-star span {
+  margin-right: 0;
+}

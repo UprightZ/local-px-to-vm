@@ -1,0 +1,245 @@
+@import "../star/star.css";
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ellipsis-two {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.evaluate__list {
+  background: #fff;
+}
+.evaluate__list--des {
+  padding: 32px 40px 28px 40px;
+  border-radius: 8px;
+}
+.evaluate__list--des .des__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  background: #F5F7FA;
+  height: 156px;
+}
+.evaluate__list--des .des__content--rate .rate {
+  display: flex;
+  align-items: baseline;
+  font-size: 56px;
+  line-height: 80px;
+  color: #24C77E;
+}
+.evaluate__list--des .des__content--rate .rate .percentage {
+  font-size: 36px;
+  line-height: 1;
+}
+.evaluate__list--des .des__content--rate .label {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+}
+.evaluate__list--des .des__content--num {
+  display: flex;
+}
+.evaluate__list--des .des__content--num .item {
+  margin-right: 48px;
+}
+.evaluate__list--des .des__content--num .item:last-child {
+  margin-right: 0;
+}
+.evaluate__list--des .des__content--num .item .num {
+  font-family: PingFangSC-Semibold;
+  font-size: 32px;
+  color: #1F212E;
+  line-height: 44px;
+}
+.evaluate__list--des .des__content--num .item .label {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #878B99;
+  line-height: 34px;
+}
+.evaluate__list__filter {
+  padding: 32px 40px 8px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.evaluate__list__filter .filter--item {
+  height: 54px;
+  line-height: 54px;
+  padding: 0 32px;
+  background: #F5F7FA;
+  border-radius: 27px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #111;
+  margin: 0 16px 24px 0;
+}
+.evaluate__list__filter .filter--item.active {
+  background: rgba(1, 170, 100, 0.13);
+  color: #01AA64;
+}
+.evaluate__list--content {
+  padding: 0 40px;
+}
+.evaluate__list--content .list--item {
+  border-bottom: 1px solid #F2F3F7;
+}
+.evaluate__list--content .list--item:last-child {
+  border-bottom: none;
+}
+.evaluate__list--content .list--item .evaluate-component {
+  display: flex;
+  padding: 32px 0;
+  position: relative;
+}
+.evaluate__list--content .list--item .evaluate-component .wonderful {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.evaluate__list--content .list--item .evaluate-component .content {
+  flex: 1;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .name {
+  font-family: PingFangSC-Medium;
+  font-size: 28px;
+  color: #111;
+  line-height: 40px;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .icon {
+  width: 110px;
+  height: 28px;
+  margin-left: 12px;
+}
+.evaluate__list--content .list--item .evaluate-component .content-line .time {
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #878B99;
+  line-height: 32px;
+  margin-left: auto;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade {
+  padding-top: 8px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade .grade-item {
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #878B99;
+  line-height: 32px;
+  padding-right: 26px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-grade .grade-item:last-child {
+  padding-right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-detail {
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #111;
+  line-height: 48px;
+  padding-top: 32px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img {
+  display: flex;
+  padding-top: 20px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img .img-item {
+  width: 184px;
+  height: 184px;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-img .img-item:last-child {
+  margin-right: 0;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des {
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  line-height: 34px;
+  color: #878B99;
+  padding-top: 32px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des .line {
+  width: 1px;
+  height: 20px;
+  margin: 0 12px;
+  background: #F2F3F7;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-des .line:last-of-type {
+  display: none;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #F2F3F7;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top .label,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .label {
+  font-family: PingFangSC-Medium;
+  font-size: 28px;
+  color: #24C77E;
+  line-height: 40px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .top .time,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .time {
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #777;
+  line-height: 32px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-review .content,
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .content {
+  padding-top: 14px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #111;
+  line-height: 48px;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .top .label {
+  color: #111;
+}
+.evaluate__list--content .list--item .evaluate-component .content .evaluate-reply .content {
+  color: #777;
+}

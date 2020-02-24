@@ -13,6 +13,8 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-base64": "^0.1.3",
+    "gulp-inline-image-html": "^0.2.3",
     "gulp-postcss": "^8.0.0",
     "postcss-px-to-viewport": "0.0.3",
     "postcss-uncss": "^0.16.1",
